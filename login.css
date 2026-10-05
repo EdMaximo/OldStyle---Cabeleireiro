@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Carrosel de: https://www.youtube.com/watch?v=KD1Yo8a_Qis - E */
+
+.carousel {
+  margin-top: 50px;
+  width: 96.55%;
+  height: 38%;
+  position: absolute;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  border: 2px solid #171A1F;
+  bottom: 0;
+  margin-bottom: 180px;
+  margin-left: 16px
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  animation: spin 25s infinite linear;
+  padding-right: 2em;
+  background-color: #1463FF;
+
+}
+
+.card {
+  flex: 0 0 15em;
+  height: 3em;
+  padding: 1em;
+  align-content: center;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 12px;
+}
+
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
+
+#cardOne {
+  height: 76%;
+  width: 50%;
+}
+
+#cardTwo {
+  height: 76%;
+  width: 50%;
+}
+
+#cardThree {
+  height: 76%;
+  width: 50%;
+  
+}
+
+.imgNumber {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.UserName {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 500; font-size: 1.12rem; white-space: nowrap;
+}
+
+.starsDiv {
+  margin-top: 19%;
+  border-bottom: 1px solid #414242;
+}
+
+.userImg {
+  width: 50px; 
+  border-radius: 100%;
+}
+
+#TimePassed {
+  color: #414242;
+  font-size: 0.6rem;
+
+}
+
+.userTextAvaliation {
+  font-size: clamp(0.4rem, 0.5rem, 0,6rem);
+}
+
+.UserAvaliation {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder; font-size: 1.72rem; white-space: nowrap;
+}
+
+#divCard {
+  display: flex;
+  align-items: flex-end; 
+  gap: 10px; 
+  position: absolute; 
+  top: 0; margin-top: 10px; overflow: hidden;
+}
+
+#DivSeparentingWays {
+  display: flex;
+  width: 100%;
+  height: 100vh !important;
+}
+
+#RightSideLogin {
+  background-color: #1463FF;
+  height: 100% !important;
+  width: 57%;
+  position: relative;
+
+}
+
+
+
+#SiteImg {
+  width: 15%;
+  border-radius: 12px;
+  border: 2px solid white;
+}
+
+#slogansDiv {
+  position: absolute;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 5%;
+  border-left: 2px solid #171A1F;
+}
+
+#SloganTitleUp {
+  font-family: Barlow Condensed;
+  font-weight: 900;
+  font-size: clamp(3rem, 6.6vw, 8rem);
+  color: #ffffff;
+}
+
+#SloganTitleDown {
+  font-family: Barlow Condensed;
+  font-weight: 900;
+  font-size: clamp(3rem, 6.6vw, 8rem);
+  color: #000000;
+}
+
+#DivInfoCompanyHistory {
+  display: flex;
+  gap: 48px;
+  margin-top: 8rem;
+  bottom: 0 !important;
+  position: absolute;
+  margin: 24px;
+  white-space: nowrap !important;
+}
+
+#TitleCompanyHistory {
+  color: #FFFFFF;
+  font-family: Barlow Condensed;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#subInfoCompanyHistory {
+  font-size: clamp(0.7re, 1.1rem, 1.3);
+  font-weight: bold;
+  color: #000000;
+}
+
+
+
+
+
+
+/* Lado esquedo da página login - inserir informações!! */
+
+#LeftSideLogin {
+  background-color: #171A1F;
+  height: 100% !important;
+  width: 43%;
+
+}
+
+#imgAndTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+#loginTitle {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: clamp(1.5rem, 2.5rem, 4rem);
+}
+
+#loginDivInputs {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #d1d2d4;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  position: relative;
+  padding: 30px;
+}
+
+.InputAndName {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.InputName {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.inputs {
+  border-radius: 3px;
+  border: 1px solid rgb(151, 151, 151);
+  padding: 2px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#divButton {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#buttonOutput {
+  width: 100%;
+  background-color: #1964fa;
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+#buttonOutput:hover {
+  background-color: white;
+  color: #1463FF;
+  border: 1px solid #1463FF;
+}
