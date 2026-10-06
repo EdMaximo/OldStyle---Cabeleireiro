@@ -150,14 +150,14 @@ body {
 }
 
 #SloganTitleUp {
-  font-family: Barlow Condensed;
+  font-family: 'Barlow Condensed';
   font-weight: 900;
   font-size: clamp(3rem, 6.6vw, 8rem);
   color: #ffffff;
 }
 
 #SloganTitleDown {
-  font-family: Barlow Condensed;
+  font-family: 'Barlow Condensed';
   font-weight: 900;
   font-size: clamp(3rem, 6.6vw, 8rem);
   color: #000000;
@@ -175,7 +175,7 @@ body {
 
 #TitleCompanyHistory {
   color: #FFFFFF;
-  font-family: Barlow Condensed;
+  font-family: 'Barlow Condensed';
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -185,10 +185,6 @@ body {
   font-weight: bold;
   color: #000000;
 }
-
-
-
-
 
 
 /* Lado esquedo da página login - inserir informações!! */
