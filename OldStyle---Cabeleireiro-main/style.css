@@ -1,0 +1,831 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #111317;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+/* NAVBAR TOP */
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 88px;
+  border-bottom: 1px solid #337bff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 100;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+#divLogoTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+#navImg {
+  border-radius: 100%;
+  width: 4rem;
+  border: 2px solid rgb(16, 129, 242);
+}
+
+#miniTitle {
+  color: #A9AFB9;
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  white-space: nowrap;
+}
+
+#NavTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(1rem, 2vw, 4rem);
+  font-weight: 900;
+}
+
+#LinksToArticlesDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#linksArticles {
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+}
+
+#linksArticles:hover {
+  color: #d6d5d5;
+}
+
+#MakeAscheduling {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.9rem, 1vw, 2rem);
+  white-space: nowrap;
+}
+
+#MakeAscheduling:hover {
+  color: #d6d5d5;
+}
+
+/* HOME ARTICLE */
+#HomeArticle {
+  padding-left: 3rem;
+  height: 975px;
+  max-height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url('assets/Imagem principal.png');
+  background-repeat: no-repeat;
+  padding-top: 88px;
+}
+
+#HomeMainPage {
+  padding-top: 10%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#SubTitleMainPageUp {
+  color: #A9AFB9;
+  margin-left: 5px;
+}
+
+#Slogan {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 6.6vw, 8rem);
+  color: #ffffff;
+  line-height: 0.95;
+}
+
+#SubTitleMainPageDown {
+  color: #A9AFB9;
+}
+
+#Buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+}
+
+#ButtonSell {
+  background-color: #1463FF;
+  color: #FFFFFF;
+  border: 1px solid #373C45;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 26px;
+  cursor: pointer;
+}
+
+#ButtonSell:hover {
+  background-color: #FFFFFF;
+  color: #1463FF;
+}
+
+#ButtonSpace {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  border: 1px solid #373C45;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 26px;
+  cursor: pointer;
+}
+
+#ButtonSpace:hover {
+  background-color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+#DivInfoCompanyHistory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-top: 8rem;
+}
+
+#TitleCompanyHistory {
+  color: #FFFFFF;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#subInfoCompanyHistory {
+  font-size: 0.5rem;
+  color: #A9AFB9;
+}
+
+/* ABOUT BARBER */
+#AboutBarber {
+  padding: 80px 4rem;
+  height: 585px;
+  max-height: 100%;
+  width: 100%;
+  background-color: #F2F3F5;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+#leftPageInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: none;
+  padding: 0;
+}
+
+#leftPageInfo h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #111;
+  line-height: 1;
+}
+
+#rightPageInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#rightPageInfo h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111;
+}
+
+#rightPageInfo span {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+#rightPageInfo div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#rightPageInfo img {
+  width: 48px;
+  height: 48px;
+  background-color: #1463FF;
+  border-radius: 4px;
+}
+
+#rightPageInfo h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+}
+
+/* HOMES CUTS */
+#HomesCuts {
+  background-color: #171A1F;
+  padding-left: 3rem;
+  height: 981px;
+  max-height: 100%;
+  width: 100%;
+  padding-top: 102px;
+}
+
+#titleAndButtonDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23%;
+  align-items: center;
+}
+
+#homeCutsTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2rem, 3rem, 4rem);
+  font-weight: 600;
+  color: #FFFFFF;
+  border-bottom: 1px solid #A9AFB9;
+}
+
+.carousel {
+  border-left: 2px solid #1463FF;
+  margin-top: 50px;
+  width: 96.55%;
+  height: 80%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 55s infinite linear;
+  padding-right: 1em;
+}
+
+.card {
+  flex: 0 0 30em;
+  height: 100%;
+  padding: 1em;
+  align-content: center;
+  position: relative;
+}
+
+@keyframes spin {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+#cardOne {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 60%), url('assets/Foto do corte.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cardTwo {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 60%), url('assets/Foto do corte E.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cardThree {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 60%), url('assets/Foto do corte B.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgNumber {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.numbersdiv {
+  background-color: #1463FF;
+  width: 50px !important;
+  height: 35px !important;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DivNameInfoCut {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 45px;
+}
+
+.CutName {
+  color: #FFFFFF;
+  display: flex;
+  white-space: nowrap;
+  font-size: clamp(1rem, 2rem, 3rem);
+  font-weight: bolder;
+}
+
+.subInfoCut {
+  color: #A9AFB9;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+/* SEÇÃO NOSSO ENDEREÇO - START */
+
+#AddressSection {
+  width: 100%;
+  height: 90vh;
+  min-height: 600px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.85) 100%
+    ),
+    url('assets/barbearia.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Indicador Topo Esquerdo */
+.addressTagTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tagNumber {
+  color: #1463ff;
+  font-weight: 800;
+  font-size: 0.9rem;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.blueLine {
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background-color: #1463ff;
+}
+
+.tagText {
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Container Inferior */
+.addressContentBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  width: 100%;
+}
+
+.addressTextGroup {
+  max-width: 650px;
+}
+
+.addressTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.addressDescription {
+  color: #a9afb9;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+/* Card do Endereço  */
+.addressCard {
+  background-color: rgba(17, 19, 23, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 4px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  backdrop-filter: blur(8px);
+}
+
+.addressCardInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.locationIcon {
+  font-size: 1.2rem;
+  color: #1463ff;
+}
+
+.cardStreet {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.cardCity {
+  color: #a9afb9;
+  font-size: 0.8rem;
+}
+
+.mapBtn {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.mapBtn:hover {
+  color: #1463ff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #AddressSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .addressContentBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .addressCard {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+/* CALL TO ACTION */
+#ctaSection {
+  background-color: #1a60ff;
+  color: #ffffff;
+  padding: 80px 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#ctaSection::after {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  box-shadow: 0 0 0 100px rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.ctaContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.ctaLeft {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ctaTag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  opacity: 0.85;
+}
+
+.ctaTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.ctaDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  max-width: 500px;
+}
+
+.ctaRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.ctaButton {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 18px 36px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.ctaSubText {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #111317;
+  color: #a9afb9;
+  padding: 70px 4rem 30px 4rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.footerContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footerBrand {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerLogoDiv {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.blueCircleLogo {
+  width: 38px;
+  height: 38px;
+  background-color: #1a60ff;
+  border-radius: 50%;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.footerTagline {
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  color: #a9afb9;
+  font-weight: 700;
+}
+
+.footerSubTitle {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.socialBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.socialBtn:hover {
+  border-color: #1a60ff;
+  color: #1a60ff;
+}
+
+.footerColumns {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.footerColTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a60ff;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.footerCol p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.footerCol .subDetail {
+  color: #a9afb9;
+  font-size: 0.75rem;
+}
+
+.footerCol a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerCol a:hover {
+  color: #1a60ff;
+}
+
+.mapLink {
+  color: #a9afb9 !important;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.footerWatermarkRow {
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.watermarkText {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.06);
+  line-height: 0.8;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.legalInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.legalLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.legalLinks a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLinks a:hover {
+  color: #ffffff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #ctaSection,
+  footer,
+  #EnderecoSection {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .ctaContainer,
+  .footerContainer,
+  .boxEnderecoInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .ctaRight {
+    align-items: flex-start;
+  }
+
+  .footerWatermarkRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .legalInfo {
+    align-items: flex-start;
+  }
+}

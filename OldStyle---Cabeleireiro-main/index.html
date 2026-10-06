@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Importação das fontes Google Fonts (Barlow Condensed e Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>OldStyle Barbearia</title>
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO SUPERIOR (NAVBAR) -->
+  <nav>
+    <div id="divLogoTitle">
+      <img src="assets/Emblema Neon de Barbearia Premium.png" alt="Logo OldStyle" id="navImg">
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <h1 id="NavTitle">OLDSTYLE</h1>
+        <a href="login.html" class="subHeaderLink">
+          <span id="miniTitle">BARBEARIA · DESDE 2018</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Links do Menu Principal -->
+    <div id="LinksToArticlesDiv">
+      <a href="#HomeArticle" id="linksArticles">INÍCIO</a>
+      <a href="#AboutBarber" id="linksArticles">A BARBEARIA</a>
+      <a href="#HomesCuts" id="linksArticles">CORTES</a>
+      <a href="#AddressSection" id="linksArticles">ENDEREÇO</a>
+      <a href="#ctaSection" id="linksArticles">CONTATO</a>
+    </div>
+
+    <div>
+      <img src="assets/calendar-days.png" alt="Ícone Agenda">
+      <a href="#ctaSection" id="MakeAscheduling">AGENDAR HORÁRIO</a>
+    </div>
+  </nav>
+
+  <div>
+    <!-- SEÇÃO 1: INÍCIO (HOME) -->
+    <article id="HomeArticle">
+      <div id="HomeMainPage">
+        <div>
+          <span class="blueIndicatorLine"></span>
+          <span id="SubTitleMainPageUp">Técnica clássica. Atitude contemporânea.</span>
+        </div>
+        <div>
+          <h1 id="Slogan">SEU ESTILO.</h1>
+          <h1 id="Slogan">UM CLÁSSICO.</h1>
+        </div>
+        <span id="SubTitleMainPageDown">Cortes precisos, barba bem-feita e uma experiência pensada para quem leva identidade a sério.</span> 
+        
+        <div id="Buttons">
+          <a href="#ctaSection" id="ButtonSell">
+            AGENDAR AGORA <img src="assets/arrow-up-right.png" alt="">
+          </a>
+          <a href="#AboutBarber" id="ButtonSpace">
+            CONHEÇA O ESPAÇO <img src="assets/arrow-up-right.png" alt="">
+          </a>
+        </div>
+
+        <div id="DivInfoCompanyHistory">
+          <div>
+            <h1 id="TitleCompanyHistory">06+</h1>
+            <span id="subInfoCompanyHistory">ANOS DE HISTÓRIA</span>
+          </div>
+          <div>
+            <h1 id="TitleCompanyHistory">4.3</h1>
+            <span id="subInfoCompanyHistory">AVALIAÇÃO MÉDIA</span>
+          </div>
+          <div>
+            <h1 id="TitleCompanyHistory">2K+</h1>
+            <span id="subInfoCompanyHistory">CLIENTES ATENDIDOS</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SEÇÃO 2: A BARBEARIA -->
+    <article id="AboutBarber">
+      <div id="leftPageInfo">
+        <div class="tagGroup">
+          <span class="blueIndicatorLine"></span>
+          <span id="SubTitleMainPageUp">PRAZER, SOMOS A OLDSTYLE</span>
+        </div>
+        <h1>O CLÁSSICO NÃO PRECISA FICAR NO PASSADO.</h1>
+      </div>
+      <div id="rightPageInfo">
+        <h2>Uma barbearia de bairro com olhar de cidade grande. Técnica, repertório e conversa boa — sem pose, sem pressa.</h2>
+        <span>A OldStyle nasceu para atualizar os rituais da barbearia tradicional. Aqui, cada atendimento começa com escuta, passa por um diagnóstico honesto e termina com um corte feito para funcionar também fora da cadeira.</span>
+        <div>
+          <img src="assets/Emblema Neon de Barbearia Premium.png" alt="Logo Oldstyle Co.">
+          <div>
+            <h3>OLDSTYLE CO.</h3>
+            <span>Feito à mão, pensado para durar.</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SEÇÃO 3: CORTES DA CASA -->
+    <article id="HomesCuts">
+      <div id="titleAndButtonDiv">
+        <div>
+          <span class="blueIndicatorLine"></span>
+          <span id="SubTitleMainPageUp">CORTES DA CASA</span>
+          <h1 id="homeCutsTitle">REFERÊNCIAS PARA O SEU PRÓXIMO CORTE.</h1>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="group">
+          <div class="card" id="cardOne">
+            <div class="numbersdiv"><span class="imgNumber">01</span></div>
+            <div class="DivNameInfoCut">
+              <h2 class="CutName">FADE PRECISO</h2>
+              <span class="subInfoCut">DEGRADÊ · TEXTURA · 45 MIN </span>
+            </div>
+          </div>
+
+          <div class="card" id="cardTwo">
+            <div class="numbersdiv"><span class="imgNumber">02</span></div>
+            <div class="DivNameInfoCut">
+              <h2 class="CutName">CRESPO NATURAL</h2>
+              <span class="subInfoCut">FORMA · DEFINIÇÃO · 55 MIN </span>
+            </div>
+          </div>
+
+          <div class="card" id="cardThree">
+            <div class="numbersdiv"><span class="imgNumber">03</span></div>
+            <div class="DivNameInfoCut">
+              <h2 class="CutName">CLÁSSICO ATUAL</h2>
+              <span class="subInfoCut">TESOURA · ACABAMENTO · 50 MIN </span>
+            </div>
+          </div>
+        </div>
+
+        <div aria-hidden class="group">
+          <div class="card" id="cardOne">
+            <div class="numbersdiv"><span class="imgNumber">01</span></div>
+            <div class="DivNameInfoCut">
+              <h2 class="CutName">FADE PRECISO</h2>
+              <span class="subInfoCut">DEGRADÊ · TEXTURA · 45 MIN </span>
+            </div>
+          </div>
+
+          <div class="card" id="cardTwo">
+            <div class="numbersdiv"><span class="imgNumber">02</span></div>
+            <div class="DivNameInfoCut">
+              <h2 class="CutName">CRESPO NATURAL</h2>
+              <span class="subInfoCut">FORMA · DEFINIÇÃO · 55 MIN </span>
+            </div>
+          </div>
+
+          <div class="card" id="cardThree">
+            <div class="numbersdiv"><span class="imgNumber">03</span></div>
+            <div class="DivNameInfoCut">
+              <h2 class="CutName">CLÁSSICO ATUAL</h2>
+              <span class="subInfoCut">TESOURA · ACABAMENTO · 50 MIN </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SEÇÃO 4: NOSSO ENDEREÇO -->
+    <article id="AddressSection">
+      <div class="addressTagTop">
+        <span class="tagNumber">04</span>
+        <span class="blueLine"></span>
+        <span class="tagText">NOSSO ENDEREÇO</span>
+      </div>
+
+      <div class="addressContentBottom">
+        <div class="addressTextGroup">
+          <h1 class="addressTitle">ENTRE. SENTE. FIQUE À VONTADE.</h1>
+          <p class="addressDescription">
+            Um espaço desenhado para desacelerar no meio da cidade — café quente, som na medida e duas cadeiras esperando por você.
+          </p>
+        </div>
+
+        <div class="addressCard">
+          <div class="addressCardInfo">
+            <span class="locationIcon">📍</span>
+            <div>
+              <h4 class="cardStreet">Rua Exemplo, 128 — Centro</h4>
+              <p class="cardCity">São Paulo — SP - 01234-000</p>
+            </div>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="mapBtn">
+            ABRIR NO MAPA ↗
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <!-- SEÇÃO 5: CALL TO ACTION (CHAMADA FINAL DE AGENDAMENTO) -->
+  <section id="ctaSection">
+    <div class="ctaContainer">
+      <div class="ctaLeft">
+        <span class="ctaTag">SUA CADEIRA ESTÁ ESPERANDO</span>
+        <h2 class="ctaTitle">BORA COLOCAR ESSE CORTE EM DIA?</h2>
+        <p class="ctaDescription">Escolha o profissional, o serviço e o melhor horário. Confirmação rápida, sem ligação e sem complicação.</p>
+      </div>
+      <div class="ctaRight">
+        <a href="login.html" class="ctaButton">ESCOLHER HORÁRIO ↗</a>
+        <span class="ctaSubText">AGENDA ONLINE - RESPOSTA IMEDIATA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ DA PÁGINA (FOOTER) -->
+  <footer>
+    <div class="footerContainer">
+      <div class="footerBrand">
+        <div class="footerLogoDiv">
+          <div class="blueCircleLogo"></div>
+          <div class="brandText">
+            <span class="footerTitle">OLDSTYLE</span>
+            <span class="footerTagline">BARBEARIA · DESDE 2018</span>
+          </div>
+        </div>
+        <p class="footerSubTitle">Barbearia urbana para quem entende que estilo começa no detalhe e continua no cuidado.</p>
+        
+        <div class="socialIcons">
+          <a href="#" class="socialBtn">📷</a>
+          <a href="#" class="socialBtn">f</a>
+          <a href="#" class="socialBtn">💬</a>
+        </div>
+      </div>
+
+      <div class="footerColumns">
+        <div class="footerCol">
+          <h4 class="footerColTitle">CONTATO</h4>
+          <p>(11) 99999-0000</p>
+          <p>ola@oldstyle.com.br</p>
+          <p class="subDetail">WhatsApp e telefone</p>
+        </div>
+
+        <div class="footerCol">
+          <h4 class="footerColTitle">HORÁRIOS</h4>
+          <p>Ter — Sex: 10h–20h</p>
+          <p>Sábado: 08h–18h</p>
+          <p class="subDetail">Dom e Seg: Fechado</p>
+        </div>
+
+        <div class="footerCol">
+          <h4 class="footerColTitle">ENDEREÇO</h4>
+          <p>Rua Exemplo, 128</p>
+          <p>Centro — São Paulo — SP</p>
+          <a href="#AddressSection" class="mapLink">Ver rota no mapa ↗</a>
+        </div>
+
+        <div class="footerCol">
+          <h4 class="footerColTitle">NAVEGUE</h4>
+          <a href="#HomeArticle">Início</a>
+          <a href="#AboutBarber">A Barbearia</a>
+          <a href="#HomesCuts">Cortes da casa</a>
+          <a href="#AddressSection">Endereço</a>
+          <a href="#ctaSection">Agendamento</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerWatermarkRow">
+      <h1 class="watermarkText">OLDSTYLE</h1>
+      <div class="legalInfo">
+        <span>© 2026 OLDSTYLE BARBEARIA. TODOS OS DIREITOS RESERVADOS.</span>
+        <div class="legalLinks">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de uso</a>
+        </div>
+        </div>
+    <article >
+      <a href="/login.html">dasdesada</a>
+      <a href="login.html">dasdesada</a>
+
+    </article>
+  </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
