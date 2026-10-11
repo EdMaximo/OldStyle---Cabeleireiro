@@ -1,0 +1,898 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+     
+
+}
+
+/* NAVBAR TOP - START - E*/
+
+nav {
+  background-color: #171a1f;
+  color: #ffffff;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 88px;
+  border-bottom: 1px solid #337bff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 100;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+
+#divLogoTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+
+}
+
+#navImg{
+  border-radius: 100%;
+  width: 4rem;
+  border: 2px solid rgb(16, 129, 242);
+}
+
+#miniTitle {
+  color: #A9AFB9;
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  white-space: nowrap;
+}
+
+#NavTitle {
+  font-family: 'Barlow Condensed', sans-serif;;
+  font-size: clamp(1rem, 2vw, 4rem);
+  font-weight: 900;
+}
+
+#LinksToArticlesDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#linksArticles {
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: inter;
+  color: #FFFFFF;
+}
+
+#linksArticles:hover {
+  color: #d6d5d5;
+}
+
+#MakeAscheduling {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: inter;
+  font-size: clamp(0.9rem, 1vw, 2rem);
+  white-space: nowrap;
+}
+
+#MakeAscheduling:hover {
+  color: #d6d5d5;
+}
+
+
+/* NAVBAR TOP - END - E*/
+
+/* HOME ARTICLE - START - E */
+#HomeArticle {
+  padding-left: 3rem;
+  height: 58vh;
+  max-height:  100%;
+  width: 100%;
+  background-color: #171a1f;
+}
+
+#HomeMainPage {
+  padding-top: 6%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#SubTitleMainPageUp {
+  color: #A9AFB9;
+  margin-left: 5px;
+}
+
+#Slogan {
+  font-family: 'Barlow Condensed', sans-serif;;
+  font-weight: 900;
+  font-size: clamp(3rem, 4.6vw, 5.5rem);
+  color: #ffffff;
+}
+#SubTitleMainPageDown {
+  color: #A9AFB9;
+}
+
+
+
+#DivInfoCompanyHistory {
+  width: 470px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 3%;
+  margin-top: 13.50%;
+  background-color: #0d0f12d3;
+  border: 1px solid #373C45;
+  padding: 30px;
+}
+
+#SubTitleMYS {
+  font-size: 0.8rem;
+  color: #A9AFB9;
+  font-weight: 400;
+  border-left: 2px solid #337bff;
+  padding-left: 5px;
+}
+
+#SubTitleDown {
+  font-size: 0.8rem;
+  color: #A9AFB9;
+  font-weight: 400;
+  border-bottom: 1px solid #373C45;
+  
+}
+
+#SubText {
+  text-align: right;
+  
+}
+
+#Hours {
+  font-family: 'Barlow Condensed', sans-serif;;
+  font-weight: 900;
+  font-size: clamp(2rem, 3.4vw, 4rem);
+  color: #ffffff;
+}
+
+#SubTitleUP {
+  font-size: 0.9rem;
+  color: #a2a7b0;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+#TimeIcon {
+  background-color: #337bff;
+  padding: 17px;
+  margin-right: 25px;
+
+}
+
+#TitleCompanyHistory {
+  color: #FFFFFF;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+/* AGENDAMENTO */
+
+#agendamento {
+  background-color: #F2F3F5;
+  margin: 0 auto;
+  
+} 
+
+#agendamentoDiv {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+#homeCutsTitle {
+  font-size: clamp(2rem, 3rem, 4rem,);
+  font-family: 'Barlow Condensed', sans-serif;;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.pathScheduling {
+  background-color: #171A1F;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 18px;
+  gap: 22%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pathNumber {
+  color: #337bff;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding-right: 5px;
+  font-size: clamp(0.6rem, 0.9rem, 1.1rem);
+
+}
+
+.textPath {
+  color: #FFFFFF;
+  font-size: clamp(0.4rem, 0.7rem, 0.9rem);
+}
+
+.pathInfoDiv {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+}
+
+#agendamento {
+  display: flex;
+  flex-direction: row !important;
+  left: 0;
+
+}
+
+.DayWeekDate {
+  color: #8e8f92;
+  font-weight: 900;
+  font-size: 0.6rem;
+}
+
+.DayNumberDate {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.ButtonSell {
+  background-color: #1463FF;
+  color: #FFFFFF;
+  border: 1px solid #373C45;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.ButtonSell:hover {
+  background-color: #FFFFFF;
+  color: #1463FF;
+  /* TODO: ICON PRETO NO HOVER */
+}
+
+.NumbersPath {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  background-color: #1463FF;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.TitleSection {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: 'Barlow Condensed', sans-serif;;
+}
+
+.SubTitleSection {
+  font-size: 0.9rem;
+  color: #86888d;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+#dateDiv {
+  display: flex; 
+  position: relative; 
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+#MounthYearNow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+
+}
+
+#FirstPath {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 60%;
+}
+
+#FirstPathDivTitles {
+  display: flex;
+  gap: 20px;
+}
+
+
+.inputDate[type="radio"]{
+  display: none;
+}
+
+.inputDate[type="radio"]:checked + label{
+  background-color: #1463FF;
+  border: 1px solid #0954ec;
+  color: white;
+  border-left: 5px solid #22262d;
+
+
+}
+
+
+.InputsData {
+  display: inline-flex;
+  background-color: #FFFFFF;
+  border: 1px solid #CFD2D8;
+  width: 18vh;
+  height: 15vh;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.InputsData:hover {
+  border: 1px solid #1463FF;
+  cursor: pointer;
+}
+
+#DivTimeChoosed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.InputsHoursLabel{
+  display: inline-flex;
+  background-color: #FFFFFF;
+  border: 1px solid #CFD2D8;
+  width: 19vh;
+  height: 9vh;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.InputsHourIPT[type="radio"]{
+  display: none;
+}
+
+.InputsHourIPT[type="radio"]:checked + label{
+  background-color: #22262d;
+  border: 1px solid #74767a;
+  color: white;
+  border-left: 5px solid #1463FF;
+
+
+}
+
+.InputsHoursLabel:hover {
+  border: 1px solid #1463FF;
+  cursor: pointer;
+}
+
+.SubTitleSec {
+  color: #171a1f;
+  font-weight: 800;
+}
+
+.DayNumberHour {
+  font-weight: 800;
+}
+
+#ChoseCutDiv {
+  display: flex;
+}
+
+#CCDDiv {
+  width: 33% !important;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.labelInput {
+  display: inline-flex;
+  background-color: #FFFFFF;
+  border: 1px solid #CFD2D8;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.CCDElements[type="radio"]{
+  display: none;
+}
+
+.CCDElements[type="radio"]:checked + label{
+  border: 1px solid #0954ec;
+  
+}
+
+.DivCutInfos {
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column; 
+  padding: 10px;
+}
+
+.imgCuts {
+  width: 100% !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.CutName {
+  font-size: clamp(1.1rem, 1.4rem, 1.7rem);
+}
+
+.cutPrice {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  color: #1463FF;
+}
+
+.InfoCut {
+  font-size: 0.8rem;
+  color: #86888d;
+  font-weight: 400;
+}
+
+/* PARTE 03 - QUEM CUIDA DO SEU ESTILO? */
+
+.ProDiv {
+  width: 90% !important;
+  display: flex;
+  border-radius: 4px;
+  margin: 10px;
+  
+}
+
+.labelInputProfessional {
+  display: flex;
+  background-color: #FFFFFF;
+  border: 2px solid #CFD2D8;
+  
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.PROElements {
+  display: none;
+}
+
+.PROElements[type="radio"]:checked + label{
+  border: 1px solid #0954ec;
+  
+}
+
+.ProImg {
+  height: 100% !important;
+  margin: 0 auto;
+}
+
+.ss {
+
+}
+
+/* CONFIRMAÇÃO DA AGENDA */
+#CheckingScheduleDiv {
+  width: 35% !important;
+  height: fit-content;
+  border: 1px solid #CFD2D8;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: rgb(242, 245, 245); right: 0; width: 25%;
+}
+
+#TitleandSubDiv {
+  background-color: rgb(29, 28, 28);
+  width: 100%; 
+  padding-left: 32px;
+  height: 70px;
+}
+
+#subTitleUp {
+  color: rgb(0, 132, 255);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.55rem;
+   white-space: nowrap;
+  font-size: clamp(0.43rem, 0.60rem, 0.95rem);
+}
+
+#YourSchedule {
+  color: #ffffff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: clamp(1.43rem, 1.60rem, 1.95rem);
+}
+
+#DivScheduleInfos {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  gap: 12px;
+}
+
+.ConfirmationDiv {
+  width: 90%; 
+  display: flex;  
+  justify-content: flex-start; 
+  align-items: flex-start;
+  padding-left: 40px;
+  
+}
+
+.IconsDSI {
+  align-self: center; 
+  padding-right: 10px;
+  width: 1.30em;
+}
+
+.UserChoicesSubTitles {
+  color: #747B87;
+  font-weight: bolder;
+  font-size: 0.65rem;
+}
+
+.ClientMadeChoices {
+  color: #171A1F;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+#CMCHoursChoosed {
+  color: #747B87;
+  font-weight: 500;
+  font-size: 0.66rem;
+}
+
+#ClientNameReservation {
+  margin: 0 auto;
+  width: 89%;
+}
+
+#CNSubTitle {
+  color: #747B87;
+  font-weight: bolder;
+  font-size: 0.66rem;
+
+}
+
+#Price {
+  color: #1463FF;
+  font-family: 'Barlow Condensed', sans-serif;
+  position: absolute;
+  right: 0;
+  font-size: clamp(1.5rem, 1.8rem, 2rem);
+}
+
+#ButtonConfirmDiv {
+  display: flex;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+  align-self: center !important;
+}
+
+#ButtonConfirm {
+  width: 100%; 
+  background-color: #1463FF; 
+  border: 1px solid #1463FF; 
+  color: white; 
+  padding: 17px; 
+  border-radius: 4px; 
+  margin: 0 auto !important;
+  white-space: nowrap;
+  font-size: clamp(1rem, 1.20rem, 1.30);
+}
+
+#ButtonConfirm:hover {
+  color: #1463FF;
+  background-color: #FFFFFF;
+  border: 1px solid #1463FF;
+  font-size: clamp(1rem, 1.20rem, 1.30);
+}
+
+#Warning {
+  color: #747B87;
+  font-size: 0.6rem;
+  text-align: center;
+
+}
+
+#scheduleConfirmationDiv {
+  background-color: #F7F8FA;
+  display: flex; 
+  flex-direction: column; 
+  align-self: center; 
+  justify-content: center;
+  width: 100%; 
+  gap: 17px; 
+  width: 100%; 
+  margin: 0 auto; 
+  border-top: 1px solid #CFD2D8; 
+  padding: 2vh;
+}
+
+#CSDTotalPriceDiv {
+  display: flex;
+  position: relative;
+  background-color: #F7F8FA;
+}
+
+#TPDSubTitleUp {
+  background-color: #F7F8FA;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  gap: 5px;
+}
+
+#totalPriceTitle {
+  font-size: clamp(0.5rem, 0.6rem, 0.7rem);
+  font-weight: bolder;
+  color: #747B87;
+  
+}
+
+#totalPriceSubTitleDown {
+  font-size: clamp(0.62rem, 0.74rem, 0.86rem);
+  color: #747B87;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #111317;
+  color: #a9afb9;
+  padding: 70px 4rem 30px 4rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.footerContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footerBrand {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerLogoDiv {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.blueCircleLogo {
+  width: 38px;
+  height: 38px;
+  background-color: #1a60ff;
+  border-radius: 50%;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.footerTagline {
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  color: #a9afb9;
+  font-weight: 700;
+}
+
+.footerSubTitle {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.socialBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.socialBtn:hover {
+  border-color: #1a60ff;
+  color: #1a60ff;
+}
+
+.footerColumns {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.footerColTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a60ff;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.footerCol p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.footerCol .subDetail {
+  color: #a9afb9;
+  font-size: 0.75rem;
+}
+
+.footerCol a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerCol a:hover {
+  color: #1a60ff;
+}
+
+.mapLink {
+  color: #a9afb9 !important;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.footerWatermarkRow {
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.watermarkText {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.06);
+  line-height: 0.8;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.legalInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.legalLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.legalLinks a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLinks a:hover {
+  color: #ffffff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #ctaSection,
+  footer,
+  #EnderecoSection {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .ctaContainer,
+  .footerContainer,
+  .boxEnderecoInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .ctaRight {
+    align-items: flex-start;
+  }
+
+  .footerWatermarkRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .legalInfo {
+    align-items: flex-start;
+  }
+}
