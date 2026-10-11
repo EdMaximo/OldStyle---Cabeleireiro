@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="agendamento.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Black+Ops+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik&display=swap" rel="stylesheet">
+  <title>Agendamento</title>
+</head>
+<body>
+  <nav>
+    <div id="divLogoTitle">
+      <img src="assets/Emblema Neon de Barbearia Premium.png" alt="" id="navImg">
+
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <h1 id="NavTitle">OLDSTYLE</h1>
+
+        <!-- REMOVER DEPOIS O A!!!!!!!!!!!!!! -->
+        <a href="login.html">
+          <span id="miniTitle">BARBEARIA · DESDE 2018</span>
+          atalho
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <!-- Início -->
+    <article id="HomeArticle">
+      <div id="HomeMainPage">
+        <div>
+          <span style="border: 1px solid #1463FF;"></span>
+          <span id="SubTitleMainPageUp">Sua cadeira está esperando.</span>
+        </div>
+
+        <div>
+          <h1 id="Slogan">AGENDE SEM PRESSA.</h1>
+          <h1 id="Slogan">CHEGUE SEM ESPERA.</h1>
+        </div>
+
+        <span id="SubTitleMainPageDown">
+          Escolha o corte, o profissional e o melhor horário. Em poucos passos, seu próximo ritual fica confirmado.
+        </span>
+      </div>
+
+      <div id="DivInfoCompanyHistory">
+        <div style="display: flex; align-items: flex-end; justify-content: center; align-items: center;">
+          <img src="assets/ÍconeTempo.png" alt="" id="TimeIcon">
+
+          <div>
+            <span id="SubTitleMainPageDown" style="font-weight: 700;">ABERTO TODOS OS DIAS.</span>
+            <h1 id="Hours">8H - 17H</h1>
+          </div>
+        </div>
+
+        <span id="SubTitleUP">
+          Os horários exibidos abaixo já respeitam nosso período de funcionamento.
+        </span>
+      </div>
+    </article>
+
+    <article id="agendamento">
+      <div id="agendamentoDiv">
+
+        <div style="padding-bottom: 40px;">
+          <span id="SubTitleMYS">AGENDA ONLINE</span>
+          <h1 id="homeCutsTitle">MONTE SEU ATENDIMENTO</h1>
+        </div>
+
+        <div class="pathScheduling">
+          <div class="pathInfoDiv">
+            <h4 class="pathNumber">01</h4>
+            <span class="textPath">DATA E HORA</span>
+          </div>
+
+          <div class="pathInfoDiv">
+            <h4 class="pathNumber">02</h4>
+            <span class="textPath">CORTE</span>
+          </div>
+
+          <div class="pathInfoDiv">
+            <h4 class="pathNumber">03</h4>
+            <span class="textPath">PROFISSIONAL</span>
+          </div>
+        </div>
+
+        <div id="JJJJJJJJJJJJJJJJJJJJJJJJ" style="display: flex; flex-wrap: nowrap; gap: 30px; width: 100%;">
+
+          <!-- QUANDO VOCÊ VEM -->
+          <div id="FirstPath">
+
+            <div id="FirstPathDivTitles">
+              <span class="NumbersPath">01</span>
+
+              <div>
+                <h3 class="TitleSection">QUANDO VOCÊ VEM?</h3>
+                <span class="SubTitleSection">
+                  Estamos aberto todos os dias, das 8h às 17h. Escolha uma data e um horário disponível
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <div id="dateDiv">
+                <div>
+                  <h3 id="MounthYearNow">OUTUBRO DE 2026</h3>
+                </div>
+
+                <div style="right: 0; position: absolute;">
+                  <button class="ButtonSell">
+                    <img src="assets/Vector.png" alt="">
+                  </button>
+
+                  <button class="ButtonSell">
+                    <img src="assets/Vector (1).png" alt="">
+                  </button>
+                </div>
+              </div>
+
+              <div style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap;">
+
+                <!-- ENTRADA DE INFORMAÇÕES - HENRY -->
+                <input type="radio" class="inputDate" name="data" id="dia1">
+                <label for="dia1" class="InputsData">
+                  <span class="DayWeekDate">SEG</span>
+                  <span class="DayNumberDate">01</span>
+                </label>
+
+                <input type="radio" class="inputDate" name="data" id="dia2">
+                <label for="dia2" class="InputsData">
+                  <span class="DayWeekDate">TER</span>
+                  <span class="DayNumberDate">02</span>
+                </label>
+
+                <input type="radio" class="inputDate" name="data" id="dia3">
+                <label for="dia3" class="InputsData">
+                  <span class="DayWeekDate">QUA</span>
+                  <span class="DayNumberDate">03</span>
+                </label>
+
+                <input type="radio" class="inputDate" name="data" id="dia4">
+                <label for="dia4" class="InputsData">
+                  <span class="DayWeekDate">QUI</span>
+                  <span class="DayNumberDate">04</span>
+                </label>
+
+                <input type="radio" class="inputDate" name="data" id="dia5">
+                <label for="dia5" class="InputsData">
+                  <span class="DayWeekDate">SEX</span>
+                  <span class="DayNumberDate">05</span>
+                </label>
+
+                <input type="radio" class="inputDate" name="data" id="dia6">
+                <label for="dia6" class="InputsData">
+                  <span class="DayWeekDate">SAB</span>
+                  <span class="DayNumberDate">06</span>
+                </label>
+
+                <input type="radio" class="inputDate" name="data" id="dia7">
+                <label for="dia7" class="InputsData">
+                  <span class="DayWeekDate">DOM</span>
+                  <span class="DayNumberDate">07</span>
+                </label>
+
+              </div>
+            </div>
+
+            <div>
+
+              <div id="FirstPathDivTitles">
+                <div>
+                    <span class="SubTitleSec">
+                    Horários disponíveis
+                  </span>
+                </div>
+              </div>
+              
+              <div id="DivTimeChoosed">
+                <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate8">
+                  <label for="hourDate8" class="InputsHoursLabel">
+                    <span class="DayNumberHour">08:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate9">
+                  <label for="hourDate9" class="InputsHoursLabel">
+                      <span class="DayNumberHour">09:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate10">
+                    <label for="hourDate10" class="InputsHoursLabel">
+                      <span class="DayNumberHour">10:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate11">
+                    <label for="hourDate11" class="InputsHoursLabel">
+                      <span class="DayNumberHour">11:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate12">
+                    <label for="hourDate12" class="InputsHoursLabel">
+                      <span class="DayNumberHour">12:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate13">
+                    <label for="hourDate13" class="InputsHoursLabel">
+                      <span class="DayNumberHour">13:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate14">
+                    <label for="hourDate14" class="InputsHoursLabel">
+                      <span class="DayNumberHour">14:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate15">
+                    <label for="hourDate15" class="InputsHoursLabel">
+                      <span class="DayNumberHour">15:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate16">
+                    <label for="hourDate16" class="InputsHoursLabel">
+                      <span class="DayNumberHour">16:00</span>
+                  </label>
+  
+                  <input type="radio" class="InputsHourIPT" name="Hour" id="hourDate17">
+                    <label for="hourDate17" class="InputsHoursLabel">
+                      <span class="DayNumberHour">17:00</span>
+                  </label>    
+              </div>
+                
+            </div>
+
+            <div>
+              <div id="FirstPathDivTitles">
+              <span class="NumbersPath">02</span>
+
+              <div>
+                <h3 class="TitleSection">Qual é o seu corte?</h3>
+                <span class="SubTitleSection">
+                  Escolha uma das 3 opções disponíveis. O diagnóstico final acontece na cadeira.
+                </span>
+              </div>
+
+            </div>
+            <div id="ChoseCutDiv">
+              
+              <div id="CCDDiv">
+                <input type="radio" class="CCDElements" name="Cut" id="firstCut">
+                <label for="firstCut" class="labelInput">
+                  <div style="width: 100% !important;">
+                    <img src="assets/AGNCutsOne.png" alt="" class="imgCuts">
+                  </div>
+                  <div class="DivCutInfos">
+                    <div>
+                      <h2 class="CutName">FADE PRECISO</h2>
+                      <span class="InfoCut">Degradê, textura e acabamento</span>
+                    </div>
+                    <span style="width: 100%; margin: 0 auto; border-top: 1px solid #CFD2D8; margin-top: 5px; padding-bottom: 5px;"></span>
+                    <h4 class="cutPrice">R$75</h4>
+                    </div>
+                </label>
+                </div>
+
+                <div id="CCDDiv">
+                <input type="radio" class="CCDElements" name="Cut" id="secondCut">
+                <label for="secondCut" class="labelInput">
+                  <div style="width: 100% !important;">
+                    <img src="assets/SecondCut.png" alt="" class="imgCuts">
+                  </div>
+                  <div class="DivCutInfos">
+                    <div>
+                      <h2 class="CutName">CLÁSSICO ATUAL</h2>
+                      <span class="InfoCut">Tesoura, contorno e finalização</span>
+                    </div>
+                    <span style="width: 100%; margin: 0 auto; border-top: 1px solid #CFD2D8; margin-top: 5px; padding-bottom: 5px;"></span>
+                    <h4 class="cutPrice">R$85</h4>
+                    </div>
+                  </label>
+                </div>
+
+                <div id="CCDDiv">
+                <input type="radio" class="CCDElements" name="Cut" id="thirdCut">
+                <label for="thirdCut" class="labelInput">
+                  <div style="width: 100% !important;">
+                    <img src="assets/ThirdCut.png" alt="" class="imgCuts">
+                  </div>
+                  <div class="DivCutInfos">
+                    <div>
+                      <h2 class="CutName">CRESPO NATURAL</h2>
+                      <span class="InfoCut">Forma, definição e acabamento</span>
+                    </div>
+                    <span style="width: 100%; margin: 0 auto; border-top: 1px solid #CFD2D8; margin-top: 5px; padding-bottom: 5px;"></span>
+                    <h4 class="cutPrice">R$90</h4>
+                    </div> 
+                </label>
+                </div>
+
+              </div>
+
+              
+
+              
+              
+            
+            </div>
+            
+            <div>
+
+              <div id="FirstPathDivTitles">
+              <span class="NumbersPath">03</span>
+
+              <div>
+                <h3 class="TitleSection">Quem cuida do seu estilo?</h3>
+                <span class="SubTitleSection">
+                  Escolha entre os 2 profissionais disponíveis para este horário.
+                </span>
+              </div>
+            </div>
+
+            <div style="display: flex;">
+              <div class="ProDiv">
+                <input type="radio" class="PROElements" name="Professional" id="Rafael">
+                <label for="Rafael" class="labelInputProfessional">
+                  <div style="height: 100% !important; margin: 0 auto;">
+                    <img src="assets/FirstProfissional.png" alt="" class="ProImg">
+                  </div>
+                  <div style="margin: 10px;">
+                    <span class="InfoCut">DISPONÍVEL</span> <!-- TODO:  MOSTRAR SE ESTÁ OU NÃO DE ACORDO COM O BANCO -->
+
+                    <h2 class="CutName">RAFAEL NUNES</h2>
+                    <span class="InfoCut">Fade, barba e acabamento preciso</span>
+                    <span style="width: 100%; margin: 0 auto; border-top: 1px solid #CFD2D8; margin-top: 5px; padding-bottom: 5px;"></span>
+                    <h4 class="ss"></h4>
+                    </div> 
+                </label>
+                </div>
+
+              <div class="ProDiv">
+                <input type="radio" class="PROElements" name="Professional" id="Caio">
+                <label for="Caio" class="labelInputProfessional">
+                  <div style="height: 100% !important; margin: 0 auto;">
+                    <img src="assets/SecondProfissional.png" alt="" class="ProImg">
+                  </div>
+                  <div style="margin: 10px;">
+                    <span class="InfoCut">DISPONÍVEL</span> <!-- TODO:  MOSTRAR SE ESTÁ OU NÃO DE ACORDO COM O BANCO -->
+
+                    <h2 class="CutName">CAIO MARTINS</h2>
+                    <span class="InfoCut">Tesoura, textura e cortes clássicos.</span>
+                    <span style="width: 100%; margin: 0 auto; border-top: 1px solid #CFD2D8; margin-top: 5px; padding-bottom: 5px;"></span>
+                    <h4 class="ss"></h4>
+                    </div> 
+                </label>
+                </div>
+            </div>
+                
+            </div>
+          </div>
+
+
+          <!-- REVISÃO ANTES DE CONFIRMAR -->
+          <div id="CheckingScheduleDiv">
+
+            <div id="TitleandSubDiv">
+              <span id="subTitleUp">REVISE ANTES DE CONFIRMAR</span>
+              <h2 id="YourSchedule">SEU AGENDAMENTO</h2>
+            </div>
+
+            <div id="DivScheduleInfos">
+
+              <div class="ConfirmationDiv">
+                <img src="assets/calendar-days.png" alt="" class="IconsDSI">
+
+                <div>
+                  <span class="UserChoicesSubTitles">DATA E HORA</span>
+                  <h4 class="ClientMadeChoices">Quarta, 14 de outubro - 14:30</h4>
+                  <!-- DATA ESCOLHIDA -->
+                </div>
+              </div>
+
+              <span style="width: 80%; margin: 0 auto; border-top: 1px solid #CFD2D8; margin-top: 5px; padding-bottom: 5px;"></span>
+
+              <div class="ConfirmationDiv">
+                <img src="assets/CorteIcon.png" alt="" class="IconsDSI">
+
+                <div>
+                  <span class="UserChoicesSubTitles">CORTE</span>
+                  <h4 class="ClientMadeChoices">Fade preciso</h4>
+                  <!-- CORTE ESCOLHIDO -->
+                  <span id="CMCHoursChoosed">45 minutos - R$75</span>
+                  <!-- Dinheiro total de acordo com o corte -->
+                </div>
+              </div>
+
+              <span style="width: 80%; margin: 0 auto; border-top: 1px solid #CFD2D8; margin-top: 5px; padding-bottom: 5px;"></span>
+
+              <div class="ConfirmationDiv">
+                <img src="assets/UserIcon.png" alt="" class="IconsDSI">
+
+                <div>
+                  <span class="UserChoicesSubTitles">PROFISSIONAL</span>
+                  <h4 class="ClientMadeChoices">Rafael Nunes</h4>
+                  <!-- Cabelereiro -->
+                </div>
+              </div>
+
+              <span style="width: 80%; margin: 0 auto; border-top: 1px solid #CFD2D8; margin-top: 5px; padding-bottom: 5px;"></span>
+
+              <!-- Reserva de quem -->
+              <div id="ClientNameReservation">
+                <span id="CNSubTitle">RESERVA PARA</span>
+                <h4>
+                  ... <!-- Nome do user -->
+                </h4>
+              </div>
+
+              <!-- Preço total e confirmação do agendamento -->
+              <div id="scheduleConfirmationDiv">
+
+                <div id="CSDTotalPriceDiv">
+
+                  <div id="TPDSubTitleUp">
+                    <span id="totalPriceTitle">PREÇO TOTAL</span>
+                    <span id="totalPriceSubTitleDown">Pagamento no local</span>
+                  </div>
+
+                  <h2 id="Price">R$75</h2>
+
+                </div>
+
+                <div id="ButtonConfirmDiv">
+                  <button id="ButtonConfirm">CONFIRMAR AGENDAMENTO</button>
+                </div>
+
+                <span id="Warning">
+                  Ao confirmar, você concorda com nossa política de cancelamento de até 2 horas antes.
+                </span>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footerContainer">
+        <div class="footerBrand">
+          <div class="footerLogoDiv">
+            <div class="blueCircleLogo"></div>
+            <div class="brandText">
+            <span class="footerTitle">OLDSTYLE</span>
+            <span class="footerTagline">BARBEARIA · DESDE 2018</span>
+          </div>
+        </div>
+        <p class="footerSubTitle">Barbearia urbana para quem entende que estilo começa no detalhe e continua no cuidado.</p>
+        
+        <div class="socialIcons">
+          <a href="#" class="socialBtn">📷</a>
+          <a href="#" class="socialBtn">f</a>
+          <a href="#" class="socialBtn">💬</a>
+        </div>
+      </div>
+
+      <div class="footerColumns">
+        <div class="footerCol">
+          <h4 class="footerColTitle">CONTATO</h4>
+          <p>(11) 99999-0000</p>
+          <p>ola@oldstyle.com.br</p>
+          <p class="subDetail">WhatsApp e telefone</p>
+        </div>
+
+        <div class="footerCol">
+          <h4 class="footerColTitle">HORÁRIOS</h4>
+          <p>Ter — Sex: 10h–20h</p>
+          <p>Sábado: 08h–18h</p>
+          <p class="subDetail">Dom e Seg: Fechado</p>
+        </div>
+
+        <div class="footerCol">
+          <h4 class="footerColTitle">ENDEREÇO</h4>
+          <p>Rua Exemplo, 128</p>
+          <p>Centro — São Paulo — SP</p>
+          <a href="#AddressSection" class="mapLink">Ver rota no mapa ↗</a>
+        </div>
+
+        <div class="footerCol">
+          <h4 class="footerColTitle">NAVEGUE</h4>
+          <a href="index.html">Início</a>
+          <a href="index.html">A Barbearia</a>
+          <a href="index.html">Cortes da casa</a>
+          <a href="index.html">Endereço</a>
+          <a href="index.html">Agendamento</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerWatermarkRow">
+      <h1 class="watermarkText">OLDSTYLE</h1>
+      <div class="legalInfo">
+        <span>© 2026 OLDSTYLE BARBEARIA. TODOS OS DIREITOS RESERVADOS.</span>
+        <div class="legalLinks">
+          <a href="">Privacidade</a>
+          <a href="">Termos de uso</a>
+        </div>
+        </div>
+    
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
