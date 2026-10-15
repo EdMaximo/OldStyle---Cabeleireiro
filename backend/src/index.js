@@ -16,5 +16,5 @@ AppDataSource.initialize().then(() => {
         console.log("Server is running :P")
     });
 }).catch((error) => {
-    console.log("Houve um erro no Servidor");
+    console.log("Houve um erro no Servidor", error);
 });

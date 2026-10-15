@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="administracao.css">
+  <!-- Importação das fontes Google Fonts (Barlow Condensed e Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Admin</title>
+</head>
+<body>
+  <nav>
+    <div id="divLogoTitle">
+      <img src="assets/Emblema Neon de Barbearia Premium.png" alt="Logo OldStyle" id="navImg">
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <h1 id="NavTitle">PAINEL DE ADMINISTRADOR</h1>
+        <a href="login.html" class="subHeaderLink">
+          <span id="miniTitle">Gestão de clientes - Agenda - Cadastros</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Links do Menu Principal -->
+    <div style="border: 2px solid #373C45; border-radius: 5px; width: 170px; height: 45px; margin: 0 auto; display: flex; align-items: center; justify-content: center; position: absolute; right: 0;">
+      <img src="assets/logOut.png" alt="Ícone logOut" style="width: 0.8vw;">
+      <a href="agendamento.html" id="MakeAscheduling"> Sair da conta</a>
+    </div>
+    
+  </nav>
+  
+  <div id="AdminPainelMainDiv">
+
+    <div class="APMDGeralInfo">
+
+      <div class="GIDivs">
+
+        <div>
+          <img src="assets/AgendaADM.png " alt="" class="DivsIcons">
+        </div>
+        <div>
+          <span class="subInfo">Agendamento do dia</span>
+          <div class="NumbMonthInfo">
+            <h1 class="MainInfo">06</h1> <!-- ADICIONAR JS -->
+            <span class="MainInfoMonth">14 de Outubro</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="GIDivs">
+
+        <div>
+          <img src="assets/clockADM.png" alt="" class="DivsIcons">
+        </div>
+        <div>
+          <span class="subInfo">Agendamentos pendentes</span>
+          <div class="NumbMonthInfo">
+            <h1 class="MainInfo">03</h1> <!-- ADICIONAR JS -->
+            <span class="MainInfoMonth">Aguardando confirmação</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="GIDivs">
+
+        <div>
+          <img src="assets/usersADM.png" alt="" class="DivsIcons">
+        </div>
+        <div>
+          <span class="subInfo">Clientes cadastrados</span>
+          <div class="NumbMonthInfo">
+            <h1 class="MainInfoTitle">128</h1>  <!-- ADICIONAR JS -->
+            <span class="MainInfoMonth">Total na base</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="MainInfo">
+
+      <div style="padding: 16px; border-bottom: 1px solid #CFD2D8">
+        <h1 class="title">AGENDAMENTOS</h1>
+        <span class="subTitle">Quarta-feira, 14 de outubro de 2026</span> <!-- ADICIONAR JS -->
+      </div>
+
+      
+
+      <div id="filterDiv" style="padding: 16px;">
+
+        <!-- ADICIONAR JS -->
+        <div style="display: flex; flex-direction: column;">
+          <span class="inputNameFilter">DATA</span>
+          <input type="date" class="dateFilterInput">
+        </div>
+
+        <!-- ADICIONAR JS -->
+        <div style="display: flex; flex-direction: column;">
+          <span class="inputNameFilter">STATUS</span>
+          <select name="Status" id="" class="StatusFilterInput">
+            <option value="todos">Todos os status</option>
+            <option value="pendentes">Pendentes</option>
+            <option value="confirmados">Confirmados</option>
+            <option value="cancelados">Cancelados</option> <!-- (?) -->
+          </select>
+        </div>
+
+        <button id="filterButton">
+          Filtrar
+        </button>
+        
+        <span id="ListedSchedules">06 agendamentos encontrados</span> <!-- ADICIONAR JS -->
+      
+      </div>
+
+      <div id="NameSubTitlesDiv">
+        
+        <span class="tableTitle">CLIENTE</span>
+        <span class="tableTitle">SERVIÇO</span>
+        <span class="tableTitle">BARBEIRO</span>
+        <span class="tableTitle">DATA</span>
+        <span class="tableTitle">HORÁRIOS</span>
+        <span class="tableTitle">STATUS</span>
+        <span class="tableTitle">AÇÕES</span>
+      </div>
+      <div class="dataUsers">
+        <div class="divEachData">
+         
+          
+            <h3 class="ClientName">Lucas Ferreira</h3>
+          
+            <span class="tableSubInfo">Fade preciso</span>
+            <span class="tableSubInfo">Rafael Nunes</span>
+            <span class="tableSubInfo">14/10/2026</span>   
+            <span class="tableSubInfo">08:00</span>  
+            
+            <span class="statusComfirmed">Confirmado</span>  
+            <button class="CancelSchedule">Cancelar</button> 
+             
+          
+        </div>
+
+        <div class="divEachData">
+         
+          
+            <h3 class="ClientName">Armando da Silva</h3>
+          
+            <span class="tableSubInfo">Clássico atual</span>
+            <span class="tableSubInfo">Caio Martins</span>
+            <span class="tableSubInfo">14/10/2026</span>   
+            <span class="tableSubInfo">09:00</span>  
+            
+            <span class="statusPendente">Pendente</span> 
+            <div style="display: flex; gap: 5px;">
+              <button class="ConfirmSchedule">Confirmar</button> 
+              <button class="CancelSchedule">Cancelar</button> 
+            </div> 
+             
+          
+        </div>
+
+         <div class="divEachData">
+         
+          
+            <h3 class="ClientName">Amanda Linda</h3>
+          
+            <span class="tableSubInfo">Fade preciso</span>
+            <span class="tableSubInfo">Rafael Nunes</span>
+            <span class="tableSubInfo">14/10/2026</span>   
+            <span class="tableSubInfo">08:00</span>  
+            
+            <span class="statusCanceled">Cancelado</span>  
+            <span class="statusComfirmed">...</span>  
+             
+             
+          
+        </div>
+
+        <div class="divEachData">
+         
+          
+            <h3 class="ClientName">Lucas Ferreira</h3>
+          
+            <span class="tableSubInfo">Fade preciso</span>
+            <span class="tableSubInfo">Rafael Nunes</span>
+            <span class="tableSubInfo">14/10/2026</span>   
+            <span class="tableSubInfo">08:00</span>  
+            
+            <span class="statusCanceled">Cancelado</span>  
+            <span class="statusComfirmed">...</span>  
+             
+             
+          
+        </div>
+
+        <div class="divEachData">
+         
+          
+            <h3 class="ClientName">Lucas Ferreira</h3>
+          
+            <span class="tableSubInfo">Fade preciso</span>
+            <span class="tableSubInfo">Rafael Nunes</span>
+            <span class="tableSubInfo">14/10/2026</span>   
+            <span class="tableSubInfo">08:00</span>  
+            
+            <span class="statusCanceled">Cancelado</span>  
+            <span class="statusComfirmed">...</span>  
+             
+             
+          
+        </div>
+
+        <div class="divEachData">
+         
+          
+            <h3 class="ClientName">Lucas Ferreira</h3>
+          
+            <span class="tableSubInfo">Fade preciso</span>
+            <span class="tableSubInfo">Rafael Nunes</span>
+            <span class="tableSubInfo">14/10/2026</span>   
+            <span class="tableSubInfo">08:00</span>  
+            
+            <span class="statusCanceled">Cancelado</span>  
+            <span class="statusComfirmed">...</span>  
+             
+             
+          
+        </div>
+
+        <div class="divEachData">
+         
+          
+            <h3 class="ClientName">Lucas Ferreira</h3>
+          
+            <span class="tableSubInfo">Fade preciso</span>
+            <span class="tableSubInfo">Rafael Nunes</span>
+            <span class="tableSubInfo">14/10/2026</span>   
+            <span class="tableSubInfo">08:00</span>  
+            
+            <span class="statusCanceled">Cancelado</span>  
+            <span class="statusComfirmed">...</span>  
+             
+             
+          
+        </div>
+        
+         
+      </div>
+
+      <!-- ADICIONAR JS!!!!!!!!! -->
+      <div style="display: flex; gap: 10px; margin: 0 auto;">
+        <span class="SubInfo"><span id="ConfirmationNumber">2</span> confirmados</span>
+        <span class="SubInfo">·</span>
+        <span class="SubInfo"><span id="pendentesNumber">3</span> confirmados</span> 
+        <span class="SubInfo">·</span>
+        <span class="SubInfo"><span id="canceledNumber">1</span> confirmados</span>
+
+      </div>
+      
+
+    </div>
+
+    <div>
+
+    </div>
+
+
+  </div>
+  
+</body>
+</html>

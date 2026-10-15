@@ -13,6 +13,21 @@ route.get("/", (request, response) => {
 route.post("/", async (request, response) => {
     const {name, email, password, telefone} = request.body
 
+    if (!name || !email || !password || !telefone) {
+        return response.status(400).send({
+            erro: "Preencha todos os campos!"
+            
+        })
+    }
+
+    if(name.length > 8) {
+        return response.status(400).send({
+            erro: "Insira o nome e sobrenome!"
+        })
+    }
+
+    if(password)
+
     try
     {
         const dataCliente = table.create({name, email, password, telefone});
@@ -23,7 +38,7 @@ route.post("/", async (request, response) => {
     }
     catch(error)
     {
-        return response.status(500).send({response: error})
+        return response.status(500).send({ erro: error.message })
     }
 });
 
