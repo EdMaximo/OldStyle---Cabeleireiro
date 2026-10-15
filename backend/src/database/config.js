@@ -1,6 +1,9 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
 import cliente from "../model/cliente.js";
+import corte from "../model/cortes.js";
+import cabelereiros from "../model/cabelereiros.js";
+import agendamento from "../model/agendamento.js";
 
 const AppDataSource = new DataSource({
     type: "mariadb", //colocar mysql 
@@ -9,7 +12,7 @@ const AppDataSource = new DataSource({
     password: "2214", //trocar a senha dependo da maquina
     port: "3306",
     database: "barbearia",
-    entities: [cliente],
+    entities: [cliente, corte, cabelereiros, agendamento],
     migrations: ["src/database/migrations"]
 });
 

@@ -13,6 +13,9 @@ route.get("/", (request, response) => {
 route.post("/", async (request, response) => {
     const {name, email, password, telefone} = request.body
 
+    // VALIDAR OS DADOS
+    // EXEMPLOS: NOME NÃO PODE TER NUMEROS, SENHA TEM QUE TER MAIS DE 8 CARACTERES, EMAIL TEM Q TER O @GMAIL, TELEFONE TEM QUE TER 11 DIGITOS
+
     try
     {
         const dataCliente = table.create({name, email, password, telefone});
