@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #F7F8FA  ;
+}
+
+/* NAV */
+
+nav {
+  background-color: rgba(0, 0, 0);
+  color: #ffffff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 88px;
+  border-bottom: 1px solid #337bff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 100;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+#divLogoTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+#navImg {
+  border-radius: 100%;
+  width: 4rem;
+  border: 2px solid rgb(16, 129, 242);
+}
+
+#miniTitle {
+  color: #A9AFB9;
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  white-space: nowrap;
+}
+
+#NavTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(0.9rem, 1.7vw, 2.8rem);
+  font-weight: 800;
+}
+
+#LinksToArticlesDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#linksArticles {
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+}
+
+#linksArticles:hover {
+  color: #d6d5d5;
+}
+
+#MakeAscheduling {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.9rem, 1vw, 2rem);
+  white-space: nowrap;
+}
+
+#MakeAscheduling:hover {
+  color: #d6d5d5;
+}
+
+/* FIM DO NAV */
+
+/* COMEÇO DO GERAL (TROCAR DIV POR HEADER...?) */
+
+
+#AdminPainelMainDiv {
+  padding-top: 16vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.APMDGeralInfo {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  gap: 30px;
+  white-space: nowrap;
+}
+
+.GIDivs {
+  display: flex;
+  align-items: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #D5D8DE;
+  border-radius: 6px;
+}
+
+.DivsIcons {
+  width: 2.5vh;
+  margin: 30px;
+}
+
+.subInfo {
+  color: #747B87;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.MainInfoTitle {
+  font-weight: 900;
+}
+
+.NumbMonthInfo {
+  display: flex;
+  align-items: flex-end;
+  gap: 13px;
+}
+
+.MainInfoMonth {
+  color: #747B87;
+  font-weight: normal;
+  font-size: 0.7rem;
+}
+
+/* FIM DO GERAL */
+
+
+/* COMEÇO DO MAIN */
+
+
+#MainInfo {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border: 1px solid #D5D8DE;
+  border-radius: 6px;
+}
+
+
+.title {
+  color: black;
+  font-size: clamp(1.6rem, 1.9rem, 2.2rem);
+  font-weight: bold;
+  font-family: 'Barlow Condensed';
+
+}
+
+.subTitle {
+  color: #747B87;
+  font-weight: normal;
+  font-size: 0.76rem;
+}
+
+#filterDiv {
+  background-color: #F7F8FA;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  padding: 16px;
+  border-bottom: 1px solid #CFD2D8
+}
+
+.inputNameFilter {
+  color: #747B87;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.dateFilterInput {
+  width: 18vh;
+  height: 4vh;
+  border-radius: 4px;
+  border: 1px solid #D5D8DE;
+}
+
+.StatusFilterInput {
+  width: 18vh;
+  height: 4vh;
+  border-radius: 4px;
+  border: 1px solid #D5D8DE;
+}
+
+#filterButton {
+  background-color: #337bff;
+  border: 1px solid #337bff;
+  border-radius: 3px;
+  width: 70px;
+  height: 40px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#filterButton:hover {
+  border: 1px solid #337bff;
+  background-color: #FFFFFF;
+  color: #337bff;
+
+}
+
+#ListedSchedules {
+  color: #585d65;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.divEachData {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 16px; 
+  border-bottom: 1px solid #CFD2D8;
+  
+}
+
+.ClientName {
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.tableSubInfo {
+  font-size: 0.92rem;
+  font-weight: 200;
+  text-align: left;
+  
+}
+
+.statusComfirmed {
+  font-size: 0.92rem;
+  font-weight: 200;
+  text-align: left;
+}
+
+.statusPendente {
+  font-size: 0.92rem;
+  font-weight: 200;
+  text-align: left;
+  color: #337bff;
+}
+
+.statusCanceled {
+  color: #747B87;
+  background-color: #F7F8FA;
+  border-radius: 4px;
+  width: 105px;
+}
+
+.ConfirmSchedule {
+  color: #ffffff;
+  border: 1px solid #337bff;
+  border-radius: 4px;
+  background-color: #337bff;
+  width: 12vh;
+  height: 5vh;
+  cursor: pointer;
+}
+
+.ConfirmSchedule:hover {
+  color: #337bff;
+  background-color: #ffffff;
+}
+
+.CancelSchedule {
+  border: 1px solid #D5D8DE;
+  border-radius: 4px;
+  background-color: #ffffff;
+  width: 12vh;
+  height: 5vh;
+  cursor: pointer;
+}
+
+.CancelSchedule:hover {
+  color: #ffffff;
+  background-color: #000;
+}
+
+
+
+
+
+
+
+#NameSubTitlesDiv {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr;
+  width: 100%;
+  border-bottom: 1px solid #D5D8DE;
+  background-color: #F7F8FA;
+  
+}
+
+.tableTitle {
+  color: #337bff;
+  font-weight: normal;
+  font-size: 0.86rem;
+  text-align: center;
+  font-weight: 600;
+  border-left: 1px solid #D5D8DE;
+  border-right: 1px solid #D5D8DE;
+
+}
+
+
+.dataUsers {
+  max-height: 350px;
+  overflow-y: auto;
+  
+}
+
+.SubInfo {
+  color: #747B87;
+  font-size: 0.66rem;
+  font-weight: 500;
+}

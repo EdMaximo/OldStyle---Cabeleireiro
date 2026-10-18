@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "create_migration": "npx typeorm -d ./src/database/config.js migration:generate ./src/database/migrations/db --outputJs",
-    "execute_migration": "npx typeorm -d ./src/database/config.js migration:run"
+    "execute_migration": "node ./node_modules/typeorm/cli.js migration:run -d ./src/database/config.js"
   },
   "keywords": [],
   "type": "module",

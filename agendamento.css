@@ -506,9 +506,7 @@ nav {
   margin: 0 auto;
 }
 
-.ss {
 
-}
 
 /* CONFIRMAÇÃO DA AGENDA */
 #CheckingScheduleDiv {
@@ -580,7 +578,7 @@ nav {
   font-size: 0.9rem;
 }
 
-#CMCHoursChoosed {
+.CMCHoursChoosed {
   color: #747B87;
   font-weight: 500;
   font-size: 0.66rem;
@@ -625,6 +623,7 @@ nav {
   margin: 0 auto !important;
   white-space: nowrap;
   font-size: clamp(1rem, 1.20rem, 1.30);
+  cursor: pointer;
 }
 
 #ButtonConfirm:hover {
@@ -698,6 +697,7 @@ footer {
   gap: 60px;
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  
 }
 
 .footerBrand {

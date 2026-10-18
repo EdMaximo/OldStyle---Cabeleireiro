@@ -8,4 +8,6 @@ routes.use("/cliente", clienteController);
 
 routes.use("/agendamento", agendamentoController);
 
+// routes.use("/administracao", administracaoController); // EDUARDO
+
 export default routes;

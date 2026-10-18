@@ -6,10 +6,10 @@ import cabelereiros from "../model/cabelereiros.js";
 import agendamento from "../model/agendamento.js";
 
 const AppDataSource = new DataSource({
-    type: "mariadb", //colocar mysql 
+    type: "mysql", //colocar mysql 
     host: "localhost",
     username: "root",
-    password: "2214", //trocar a senha dependo da maquina
+    password: "", //trocar a senha dependo da maquina
     port: "3306",
     database: "barbearia",
     entities: [cliente, corte, cabelereiros, agendamento],
