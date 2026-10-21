@@ -18,26 +18,32 @@
   <nav>
     <div id="divLogoTitle">
       <img src="assets/Emblema Neon de Barbearia Premium.png" alt="Logo OldStyle" id="navImg">
-      <div style="display: flex; flex-direction: column; justify-content: center;">
+      <div id="logoTexts">
         <h1 id="NavTitle">OLDSTYLE</h1>
-        <a href="login.html" class="subHeaderLink">
-          <span id="miniTitle">BARBEARIA · DESDE 2018</span>
-        </a>
+        <span id="miniTitle">BARBEARIA · DESDE 2018</span>
       </div>
     </div>
 
     <!-- Links do Menu Principal -->
     <div id="LinksToArticlesDiv">
-      <a href="#HomeArticle" id="linksArticles">INÍCIO</a>
+      <a href="#HomeArticle" id="linksArticles" class="activeLink">INÍCIO</a>
       <a href="#AboutBarber" id="linksArticles">A BARBEARIA</a>
       <a href="#HomesCuts" id="linksArticles">CORTES</a>
-      <a href="#AddressSection" id="linksArticles">ENDEREÇO</a>
+      <a href="#ServicesSection" id="linksArticles">SERVIÇOS</a>
+      <a href="#TeamSection" id="linksArticles">BARBEIROS</a>
       <a href="#ctaSection" id="linksArticles">CONTATO</a>
     </div>
 
-    <div>
-      <img src="assets/calendar-days.png" alt="Ícone Agenda">
-      <a href="agendamento.html" id="MakeAscheduling">AGENDAR HORÁRIO</a>
+    <div id="navRight">
+      <a href="agendamento.html" id="MakeAscheduling">
+        <img src="assets/calendar-days.png" alt="Ícone Agenda">
+        AGENDAR HORÁRIO
+      </a>
+
+      <a href="login.html" id="divUserInfo">
+        <img src="assets/UserIcon.png" alt="Login" id="userImg">
+        <span id="userName">VISITANTE</span>
+      </a>
     </div>
   </nav>
 
@@ -60,7 +66,7 @@
               AGENDAR AGORA <img src="assets/arrow-up-right.png" alt="">
           </a>
           
-          <a href="#AddressSection" id="ButtonSpace">
+          <a href="#AboutBarber" id="ButtonSpace">
               CONHEÇA O ESPAÇO <img src="assets/arrow-up-right.png" alt="">
           </a>
         </div>
@@ -95,7 +101,7 @@
         <h2>Uma barbearia de bairro com olhar de cidade grande. Técnica, repertório e conversa boa — sem pose, sem pressa.</h2>
         <span>A OldStyle nasceu para atualizar os rituais da barbearia tradicional. Aqui, cada atendimento começa com escuta, passa por um diagnóstico honesto e termina com um corte feito para funcionar também fora da cadeira.</span>
         <div>
-          <img src="assets/Emblema Neon de Barbearia Premium.png" alt="Logo Oldstyle Co.">
+          <img src="assets/Emblema Neon OldStyle Barbearia.png" alt="Logo Oldstyle Co.">
           <div>
             <h3>OLDSTYLE CO.</h3>
             <span>Feito à mão, pensado para durar.</span>
@@ -169,7 +175,101 @@
       </div>
     </article>
 
-    <!-- SEÇÃO 4: NOSSO ENDEREÇO -->
+    <!-- SEÇÃO 4: SERVIÇOS & VALORES -->
+    <article id="ServicesSection">
+
+      <div id="servicesHeader">
+        <div class="servicesHeaderLeft">
+          <div class="tagGroup">
+            <span class="blueIndicatorLine"></span>
+            <span class="servicesTag">SERVIÇOS &amp; VALORES</span>
+          </div>
+          <h1 id="servicesTitle">ESCOLHA O RITUAL. A GENTE CUIDA DO RESTO.</h1>
+        </div>
+
+        <p id="servicesHeaderText">
+          Valores de referência. O diagnóstico final é feito na cadeira, antes de começar.
+        </p>
+      </div>
+
+      <div id="servicesContent">
+
+        <!-- Lista de serviços -->
+        <div id="servicesLeft">
+          <div class="serviceRow">
+            <span class="serviceNumber activeNumber">01</span>
+            <div class="serviceInfo">
+              <h3 class="serviceName">CORTE OLDSTYLE</h3>
+              <span class="serviceDesc">Consulta, corte e finalização personalizada.</span>
+            </div>
+            <span class="serviceTime">45 MIN</span>
+            <span class="servicePrice">R$ 75</span>
+            <a href="agendamento.html" class="serviceArrow activeArrow">↗</a>
+          </div>
+
+          <div class="serviceRow">
+            <span class="serviceNumber">02</span>
+            <div class="serviceInfo">
+              <h3 class="serviceName">BARBA RITUAL</h3>
+              <span class="serviceDesc">Toalha quente, desenho e hidratação.</span>
+            </div>
+            <span class="serviceTime">40 MIN</span>
+            <span class="servicePrice">R$ 60</span>
+            <a href="agendamento.html" class="serviceArrow">↗</a>
+          </div>
+
+          <div class="serviceRow">
+            <span class="serviceNumber">03</span>
+            <div class="serviceInfo">
+              <h3 class="serviceName">COMBO COMPLETO</h3>
+              <span class="serviceDesc">Corte, barba e acabamento premium.</span>
+            </div>
+            <span class="serviceTime">75 MIN</span>
+            <span class="servicePrice">R$ 120</span>
+            <a href="agendamento.html" class="serviceArrow">↗</a>
+          </div>
+
+          <div class="serviceRow">
+            <span class="serviceNumber">04</span>
+            <div class="serviceInfo">
+              <h3 class="serviceName">PEZINHO &amp; ACABAMENTO</h3>
+              <span class="serviceDesc">Contorno, nuca e manutenção entre cortes.</span>
+            </div>
+            <span class="serviceTime">20 MIN</span>
+            <span class="servicePrice">R$ 35</span>
+            <a href="agendamento.html" class="serviceArrow">↗</a>
+          </div>
+
+          <div class="serviceRow">
+            <span class="serviceNumber">05</span>
+            <div class="serviceInfo">
+              <h3 class="serviceName">CAMUFLAGEM</h3>
+              <span class="serviceDesc">Cobertura natural de fios brancos.</span>
+            </div>
+            <span class="serviceTime">35 MIN</span>
+            <span class="servicePrice">R$ 65</span>
+            <a href="agendamento.html" class="serviceArrow">↗</a>
+          </div>
+
+          <a href="agendamento.html" class="servicesAllBtn">VER TODOS OS SERVIÇOS ↗</a>
+        </div>
+
+        <!-- Card com foto do serviço em destaque -->
+        <div id="servicesRight">
+          <div class="serviceFeatured" id="featuredImage">
+            <span class="featuredBadge">FOTO DE SERVIÇO · SUBSTITUIR</span>
+            <span class="featuredTop">MAIS PEDIDO</span>
+            <div class="featuredInfo">
+              <h2 class="featuredName">COMBO COMPLETO</h2>
+              <span class="featuredSub">Corte + barba · 75 minutos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- SEÇÃO 5: NOSSO ENDEREÇO -->
     <article id="AddressSection">
       <div class="addressTagTop">
         <span class="tagNumber">04</span>
@@ -199,9 +299,101 @@
         </div>
       </div>
     </article>
+
+    <!-- SEÇÃO 6: QUEM FAZ A OLDSTYLE (BARBEIROS) -->
+    <article id="TeamSection">
+
+      <div id="teamHeader">
+        <div class="teamHeaderLeft">
+          <div class="tagGroup">
+            <span class="blueIndicatorLine"></span>
+            <span class="teamTag">QUEM FAZ A OLDSTYLE</span>
+          </div>
+          <h1 id="teamTitle">DUAS HISTÓRIAS. A MESMA OBSESSÃO PELO DETALHE.</h1>
+        </div>
+
+        <p id="teamHeaderText">
+          Mais que executar um corte, a dupla entende rotina, referência e personalidade para construir um resultado que é só seu.
+        </p>
+      </div>
+
+      <div id="teamCards">
+
+        <!-- Profissional 1 -->
+        <div class="teamCard">
+          <div class="teamPhoto" id="photoRafael">
+            <span class="photoBadge">FOTO DO PROFISSIONAL</span>
+            <div class="yearsBox">
+              <span class="yearsNumber">11 anos</span>
+              <span class="yearsLabel">DE CADEIRA</span>
+            </div>
+          </div>
+
+          <div class="teamInfo">
+            <div>
+              <span class="teamRole">FUNDADOR · BARBEIRO</span>
+              <h2 class="teamName">RAFAEL NUNES</h2>
+            </div>
+
+            <div>
+              <span class="teamSmallLabel">TEXTO PLACEHOLDER · EDITAR</span>
+              <p class="teamDescription">
+                Começou cedo, entre navalhas antigas e discos de soul. Depois de passar por diferentes casas, criou a OldStyle para unir técnica clássica e uma leitura mais atual de estilo pessoal.
+              </p>
+            </div>
+
+            <div class="teamSpecialties">
+              <span class="teamSmallLabel">ESPECIALIDADES</span>
+              <p>Degradês precisos · cortes curtos · consultoria de visagismo</p>
+            </div>
+
+            <a href="#" class="teamLink">
+              <img src="assets/instagram.png" alt="Instagram" class="teamLinkIcon">
+              VER TRABALHOS
+            </a>
+          </div>
+        </div>
+
+        <!-- Profissional 2 -->
+        <div class="teamCard">
+          <div class="teamPhoto" id="photoCaio">
+            <span class="photoBadge">FOTO DO PROFISSIONAL</span>
+            <div class="yearsBox">
+              <span class="yearsNumber">8 anos</span>
+              <span class="yearsLabel">DE CADEIRA</span>
+            </div>
+          </div>
+
+          <div class="teamInfo">
+            <div>
+              <span class="teamRole">SÓCIO · BARBEIRO</span>
+              <h2 class="teamName">CAIO MARTINS</h2>
+            </div>
+
+            <div>
+              <span class="teamSmallLabel">TEXTO PLACEHOLDER · EDITAR</span>
+              <p class="teamDescription">
+                Caio chegou com repertório de rua, obsessão por textura e atenção aos detalhes. Seu trabalho busca traduzir referências sem copiar fórmulas — um corte pensado para a rotina de cada cliente.
+              </p>
+            </div>
+
+            <div class="teamSpecialties">
+              <span class="teamSmallLabel">ESPECIALIDADES</span>
+              <p>Cabelos crespos · tesoura · barba e acabamento natural</p>
+            </div>
+
+            <a href="#" class="teamLink">
+              <img src="assets/instagram.png" alt="Instagram" class="teamLinkIcon">
+              VER TRABALHOS
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </article>
   </div>
   
-  <!-- SEÇÃO 5: CALL TO ACTION (CHAMADA FINAL DE AGENDAMENTO) -->
+  <!-- SEÇÃO 7: CALL TO ACTION (CHAMADA FINAL DE AGENDAMENTO) -->
   <section id="ctaSection">
     <div class="ctaContainer">
       <div class="ctaLeft">
@@ -210,7 +402,7 @@
         <p class="ctaDescription">Escolha o profissional, o serviço e o melhor horário. Confirmação rápida, sem ligação e sem complicação.</p>
       </div>
       <div class="ctaRight">
-        <a href="agendamento.html" class="ctaButton">ESCOLHER HORÁRIO ↗</a>
+        <a href="login.html" class="ctaButton">ESCOLHER HORÁRIO ↗</a>
         <span class="ctaSubText">AGENDA ONLINE - RESPOSTA IMEDIATA</span>
       </div>
     </div>
@@ -263,7 +455,9 @@
           <a href="#HomeArticle">Início</a>
           <a href="#AboutBarber">A Barbearia</a>
           <a href="#HomesCuts">Cortes da casa</a>
+          <a href="#ServicesSection">Serviços</a>
           <a href="#AddressSection">Endereço</a>
+          <a href="#TeamSection">Barbeiros</a>
           <a href="#ctaSection">Agendamento</a>
         </div>
       </div>
@@ -277,13 +471,6 @@
           <a href="#">Privacidade</a>
           <a href="#">Termos de uso</a>
         </div>
-        </div>
-    <article >
-      <a href="/login.html">dasdesada</a>
-      <a href="login.html">dasdesada</a>
-
-    </article>
-  </div>
       </div>
     </div>
   </footer>

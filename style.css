@@ -21,12 +21,12 @@ nav {
   height: 88px;
   border-bottom: 1px solid #337bff;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  gap: clamp(1rem, 3vw, 3rem);
+  padding-left: clamp(1rem, 4vw, 4rem);
+  padding-right: clamp(1rem, 4vw, 4rem);
   z-index: 100;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
@@ -35,6 +35,7 @@ nav {
 #divLogoTitle {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 12px;
 }
 
@@ -44,7 +45,14 @@ nav {
   border: 2px solid rgb(16, 129, 242);
 }
 
+#logoTexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #miniTitle {
+  display: block;
   color: #A9AFB9;
   font-size: clamp(0.7rem, 1vw, 2rem);
   white-space: nowrap;
@@ -59,30 +67,63 @@ nav {
 #LinksToArticlesDiv {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: clamp(0.8rem, 2.2vw, 2.5rem);
 }
 
 #linksArticles {
   text-decoration: none;
   white-space: nowrap;
   font-family: 'Inter', sans-serif;
-  color: #FFFFFF;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  color: #d6d5d5;
+  transition: color 0.2s ease;
 }
 
 #linksArticles:hover {
-  color: #d6d5d5;
+  color: #ffffff;
+}
+
+#linksArticles.activeLink {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+#navRight {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.8rem, 1.5vw, 1.5rem);
 }
 
 #MakeAscheduling {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
   color: #FFFFFF;
   font-family: 'Inter', sans-serif;
-  font-size: clamp(0.9rem, 1vw, 2rem);
+  font-size: clamp(0.8rem, 1vw, 1rem);
   white-space: nowrap;
 }
 
 #MakeAscheduling:hover {
   color: #d6d5d5;
+}
+
+#loginLink {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  color: #FFFFFF;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#loginLink:hover {
+  background-color: #1463FF;
+  border-color: #1463FF;
 }
 
 /* HOME ARTICLE */
@@ -136,6 +177,10 @@ nav {
   border-radius: 4px;
   padding: 26px;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 #ButtonSell:hover {
@@ -151,6 +196,10 @@ nav {
   border-radius: 4px;
   padding: 26px;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 #ButtonSpace:hover {
@@ -364,8 +413,239 @@ nav {
   white-space: nowrap;
 }
 
-/* SEÇÃO NOSSO ENDEREÇO - START */
+/* SEÇÃO SERVIÇOS & VALORES */
+#ServicesSection {
+  background-color: #F2F3F5;
+  padding: 80px 4rem;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  scroll-margin-top: 88px;
+}
 
+#servicesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.servicesHeaderLeft {
+  max-width: 600px;
+}
+
+#ServicesSection .tagGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#ServicesSection .blueIndicatorLine {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: #1463FF;
+}
+
+.servicesTag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+#servicesTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1;
+  color: #111;
+}
+
+#servicesHeaderText {
+  max-width: 260px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #666;
+  text-align: right;
+}
+
+#servicesContent {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+#servicesLeft {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+}
+
+#servicesRight {
+  flex: 1;
+}
+
+.serviceRow {
+  display: grid;
+  grid-template-columns: 36px 1fr 70px 90px 36px;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid #DCDFE4;
+}
+
+.serviceRow:last-of-type {
+  border-bottom: 1px solid #DCDFE4;
+}
+
+.serviceNumber {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #666;
+}
+
+.activeNumber {
+  color: #1463FF;
+}
+
+.serviceName {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #111;
+}
+
+.serviceDesc {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.7rem;
+  color: #666;
+}
+
+.serviceTime {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #666;
+  text-align: right;
+}
+
+.servicePrice {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+  text-align: right;
+}
+
+.serviceArrow {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #DCDFE4;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #111;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.serviceArrow:hover {
+  background-color: #1463FF;
+  border-color: #1463FF;
+  color: #FFFFFF;
+}
+
+.activeArrow {
+  background-color: #1463FF;
+  border-color: #1463FF;
+  color: #FFFFFF;
+}
+
+.servicesAllBtn {
+  align-self: flex-start;
+  margin-top: 20px;
+  padding: 14px 20px;
+  border: 1px solid #DCDFE4;
+  border-radius: 3px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #111;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.servicesAllBtn:hover {
+  background-color: #111;
+  color: #FFFFFF;
+}
+
+.serviceFeatured {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+  background-color: #171A1F;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#featuredImage {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 50%), url('assets/combo-completo.png');
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.featuredTop {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 6px 10px;
+  background-color: #1463FF;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.featuredInfo {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.featuredName {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.featuredSub {
+  font-size: 0.7rem;
+  color: #A9AFB9;
+}
+
+/* SEÇÃO NOSSO ENDEREÇO */
 #AddressSection {
   width: 100%;
   height: 90vh;
@@ -389,7 +669,6 @@ nav {
   font-family: 'Inter', sans-serif;
 }
 
-/* Indicador Topo Esquerdo */
 .addressTagTop {
   display: flex;
   align-items: center;
@@ -419,7 +698,6 @@ nav {
   text-transform: uppercase;
 }
 
-/* Container Inferior */
 .addressContentBottom {
   display: flex;
   justify-content: space-between;
@@ -449,7 +727,6 @@ nav {
   max-width: 500px;
 }
 
-/* Card do Endereço  */
 .addressCard {
   background-color: rgba(17, 19, 23, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -502,21 +779,209 @@ nav {
   color: #1463ff;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  #AddressSection {
-    padding: 2rem 1.5rem;
-  }
+/* SEÇÃO QUEM FAZ A OLDSTYLE (BARBEIROS) */
+#TeamSection {
+  background-color: #F2F3F5;
+  padding: 80px 4rem;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  scroll-margin-top: 88px;
+}
 
-  .addressContentBottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+#teamHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 40px;
+}
 
-  .addressCard {
-    width: 100%;
-    min-width: auto;
-  }
+.teamHeaderLeft {
+  max-width: 720px;
+}
+
+#TeamSection .tagGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#TeamSection .blueIndicatorLine {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: #1463FF;
+}
+
+.teamTag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+#teamTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1;
+  color: #111;
+}
+
+#teamHeaderText {
+  max-width: 320px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #666;
+  text-align: right;
+}
+
+#teamCards {
+  display: flex;
+  gap: 24px;
+}
+
+.teamCard {
+  flex: 1;
+  display: flex;
+  min-height: 480px;
+  background-color: #FFFFFF;
+  border: 1px solid #DCDFE4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.teamPhoto {
+  position: relative;
+  width: 45%;
+  background-color: #171A1F;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#photoRafael {
+  background-image: url('assets/rafael.png');
+}
+
+#photoCaio {
+  background-image: url('assets/caio.png');
+}
+
+.photoBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.yearsBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 20px;
+  background-color: rgba(17, 19, 23, 0.8);
+}
+
+.yearsNumber {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.yearsLabel {
+  margin-top: 4px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #A9AFB9;
+}
+
+.teamInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px;
+}
+
+.teamRole {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1463FF;
+}
+
+.teamName {
+  margin-top: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #111;
+}
+
+.teamSmallLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+.teamDescription {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+.teamSpecialties {
+  padding-top: 16px;
+  border-top: 1px solid #DCDFE4;
+}
+
+.teamSpecialties p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #111;
+}
+
+.teamLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #111;
+  transition: color 0.2s ease;
+}
+
+.teamLink:hover {
+  color: #1463FF;
+}
+
+.teamLinkIcon {
+  width: 16px;
+  height: 16px;
 }
 
 /* CALL TO ACTION */
@@ -794,22 +1259,21 @@ footer {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 900px) {
-  nav {
-    padding-left: 1rem;
-    padding-right: 1rem;
+@media (max-width: 1100px) {
+  #miniTitle {
+    display: none;
   }
+}
 
+@media (max-width: 900px) {
   #ctaSection,
-  footer,
-  #EnderecoSection {
+  footer {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
   .ctaContainer,
-  .footerContainer,
-  .boxEnderecoInfo {
+  .footerContainer {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -828,4 +1292,117 @@ footer {
   .legalInfo {
     align-items: flex-start;
   }
+
+  /* Endereço */
+  #AddressSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .addressContentBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .addressCard {
+    width: 100%;
+    min-width: auto;
+  }
+
+  /* Serviços */
+  #ServicesSection {
+    padding: 50px 1.5rem;
+  }
+
+  #servicesHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  #servicesHeaderText {
+    text-align: left;
+  }
+
+  #servicesContent {
+    flex-direction: column;
+  }
+
+  .serviceFeatured {
+    min-height: 360px;
+  }
+
+  /* Barbeiros */
+  #TeamSection {
+    padding: 50px 1.5rem;
+  }
+
+  #teamHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  #teamHeaderText {
+    text-align: left;
+  }
+
+  #teamCards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  #LinksToArticlesDiv {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .serviceRow {
+    grid-template-columns: 28px 1fr 80px 32px;
+  }
+
+  .serviceTime {
+    display: none;
+  }
+
+  .teamCard {
+    flex-direction: column;
+  }
+
+  .teamPhoto {
+    width: 100%;
+    height: 340px;
+  }
+}
+#divUserInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+#userImg {
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  border-radius: 100%;
+  border: 1px solid #373C45;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#divUserInfo:hover #userImg {
+  background-color: #1463FF;
+  border-color: #1463FF;
+}
+
+#userName {
+  max-width: 80px;
+  color: #A9AFB9;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

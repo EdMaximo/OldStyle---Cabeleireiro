@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +8,59 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Black+Ops+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik&display=swap" rel="stylesheet">
   <script src="frontend/agendamento.js" defer></script>
-  <title>Agendamento</title>
+  <title>Agendamento - OldStyle Barbearia</title>
 </head>
 <body>
+
+  <!-- NAVEGAÇÃO SUPERIOR (NAVBAR) -->
   <nav>
     <div id="divLogoTitle">
-      <img src="assets/Emblema Neon de Barbearia Premium.png" alt="" id="navImg">
-
-      <div style="display: flex; flex-direction: column; justify-content: center;">
+      <img src="assets/Emblema Neon de Barbearia Premium.png" alt="Logo OldStyle" id="navImg">
+      <div id="logoTexts">
         <h1 id="NavTitle">OLDSTYLE</h1>
-
-        <!-- REMOVER DEPOIS O A!!!!!!!!!!!!!! -->
-        <a href="login.html">
           <span id="miniTitle">BARBEARIA · DESDE 2018</span>
           atalho
         </a>
       </div>
     </div>
+
+    <!-- Links do Menu Principal -->
+    <div id="LinksToArticlesDiv">
+      <a href="index.html" id="linksArticles">INÍCIO</a>
+      <a href="index.html#AboutBarber" id="linksArticles">A BARBEARIA</a>
+      <a href="index.html#HomesCuts" id="linksArticles">CORTES</a>
+      <a href="index.html#ServicesSection" id="linksArticles">SERVIÇOS</a>
+      <a href="index.html#TeamSection" id="linksArticles">BARBEIROS</a>
+      <a href="agendamento.html" id="linksArticles" class="activeLink">AGENDAMENTO</a>
+    </div>
+
+    <!-- Lado Direito da Nav (Usuário com label abaixo da imagem) -->
+    <div id="navRight">
+      <a href="agendamento.html" id="MakeAscheduling">
+        <img src="assets/calendar-days.png" alt="Ícone Agenda" id="calendarIconNav">
+        AGENDAR HORÁRIO
+      </a>
+
+      <a href="login.html" id="divUserInfo">
+        <img src="assets/UserIcon.png" alt="Login" id="userImg">
+        <span id="userName">VISITANTE</span>
+      </a>
+    </div>
   </nav>
 
-  <div>
-    <!-- Início -->
+  <main>
+    <!-- Início / Banner Superior -->
     <article id="HomeArticle">
       <div id="HomeMainPage">
         <div>
-          <span style="border: 1px solid #1463FF;"></span>
+          <span class="blueIndicatorLine"></span>
           <span id="SubTitleMainPageUp">Sua cadeira está esperando.</span>
         </div>
 
         <div>
-          <h1 id="Slogan">AGENDE SEM PRESSA.</h1>
-          <h1 id="Slogan">CHEGUE SEM ESPERA.</h1>
+          <h1 class="sloganText">AGENDE SEM PRESSA.</h1>
+          <h1 class="sloganText">CHEGUE SEM ESPERA.</h1>
         </div>
 
         <span id="SubTitleMainPageDown">
@@ -51,21 +69,20 @@
       </div>
 
       <div id="DivInfoCompanyHistory">
-        <div style="display: flex; align-items: flex-end; justify-content: center; align-items: center;">
-          <img src="assets/ÍconeTempo.png" alt="" id="TimeIcon">
-
+        <div style="display: flex; align-items: center;">
+          <img src="assets/ÍconeTempo.png" alt="Tempo" id="TimeIcon">
           <div>
             <span id="SubTitleMainPageDown" style="font-weight: 700;">ABERTO TODOS OS DIAS.</span>
             <h1 id="Hours">8H - 17H</h1>
           </div>
         </div>
-
         <span id="SubTitleUP">
           Os horários exibidos abaixo já respeitam nosso período de funcionamento.
         </span>
       </div>
     </article>
 
+    <!-- Seção Principal de Agendamento -->
     <article id="agendamento">
       <div id="agendamentoDiv">
 
@@ -76,7 +93,7 @@
 
         <div class="pathScheduling">
           <div class="pathInfoDiv">
-             <h4 class="pathNumber"> <a href="administracao.html"> 01 </a></h4> <!-- TIRAR DPS ATALHOOOOOOOOOOOOOOOOOOO -->
+            <h4 class="pathNumber">01</h4>
             <span class="textPath">DATA E HORA</span>
           </div>
 
@@ -91,18 +108,18 @@
           </div>
         </div>
 
-        <div id="JJJJJJJJJJJJJJJJJJJJJJJJ" style="display: flex; flex-wrap: nowrap; gap: 30px; width: 100%;">
+        <div style="display: flex; flex-wrap: nowrap; gap: 30px; width: 100%;">
 
-          <!-- QUANDO VOCÊ VEM -->
+          <!-- ETAPAS DE SELEÇÃO DO CLIENTE -->
           <div id="FirstPath">
 
+            <!-- ETAPA 01: DATA E HORÁRIO -->
             <div id="FirstPathDivTitles">
               <span class="NumbersPath">01</span>
-
               <div>
                 <h3 class="TitleSection">QUANDO VOCÊ VEM?</h3>
                 <span class="SubTitleSection">
-                  Estamos aberto todos os dias, das 8h às 17h. Escolha uma data e um horário disponível
+                  Estamos abertos todos os dias, das 8h às 17h. Escolha uma data e um horário disponível.
                 </span>
               </div>
             </div>
@@ -113,18 +130,18 @@
                   <h3 id="MounthYearNow">OUTUBRO DE 2026</h3>
                 </div>
 
-                <div style="right: 0; position: absolute;">
-                  <button class="ButtonSell">
-                    <img src="assets/Vector.png" alt="">
+                <div style="right: 0; position: absolute; display: flex; gap: 8px;">
+                  <button type="button" class="ButtonSell" id="scrollLeftBtn" aria-label="Dia anterior">
+                    <img src="assets/Vector.png" alt="Anterior">
                   </button>
-
-                  <button class="ButtonSell">
-                    <img src="assets/Vector (1).png" alt="">
+                  <button type="button" class="ButtonSell" id="scrollRightBtn" aria-label="Próximo dia">
+                    <img src="assets/Vector (1).png" alt="Próximo">
                   </button>
                 </div>
               </div>
 
-              <div style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap;">
+              <!-- Carrossel de Todos os 31 Dias de Outubro -->
+              <div id="dateScrollContainer" class="dateCarouselContainer">
 
                 <!-- ENTRADA DE INFORMAÇÕES - HENRY -->
                 <input type="radio" class="inputDate" name="data" id="dia1" value="2026-10-01">
