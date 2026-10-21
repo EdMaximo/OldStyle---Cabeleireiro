@@ -36,6 +36,45 @@ route.get("/totalAgend", async (req, res) => {
   
 });
 
+// Para o botão
+route.patch("/AllAgend", async (req, res) => {
+  const { id_agendamento } = req.query; 
+
+  try {
+    const agendamento = await agedamentosRepository.findOneBy({
+      id_agendamento: Number(id_agendamento),
+    });
+
+    if (!agendamento) {
+      return res.status(404).send("Agendamento não encontrado");
+    }
+
+    agendamento.status = "aceito";
+
+    await agedamentosRepository.save(agendamento);
+
+    return res.status(200).json(agendamento);
+  } catch {
+    console.error(error);
+    return res.status(500).send("Not possible get users");
+  }
+
+  // try {
+  // await agedamentosRepository.save(dadosAgendamento);
+
+  // return response
+  //   .status(200)
+  //   .send({ response: "Status Atualizado!!" });
+  // } catch (error) {
+  //   console.error("Erro ao salvar agendamento:", error);
+  //   return req.status(500).json({ mensagem: "Erro interno no servidor." });
+  // }
+});
+
+  
+
+
+
 // Aonde vai salvar o agendamento
 route.post("/", async (request, response) => {
   const { data_hora, corte, cabelereiro, cliente } = request.body; // requisita as informações do front. no caso do corte,cabelereiro e cliente ele so vai pegar o id deles.
