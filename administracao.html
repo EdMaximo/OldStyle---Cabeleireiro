@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="frontend/administracao.js"></script>
   <title>Admin</title>
 </head>
 <body>
@@ -40,10 +41,10 @@
           <img src="assets/AgendaADM.png " alt="" class="DivsIcons">
         </div>
         <div>
-          <span class="subInfo">Agendamento do dia</span>
+          <span class="subInfo">Agendamentos do dia</span>
           <div class="NumbMonthInfo">
             <h1 class="MainInfo">06</h1> <!-- ADICIONAR JS -->
-            <span class="MainInfoMonth">14 de Outubro</span>
+            <span class="MainInfoMonth"><span class="MainInfoMonth" id="dayotm">21</span> de Outubro</span>
           </div>
         </div>
 
@@ -57,7 +58,7 @@
         <div>
           <span class="subInfo">Agendamentos pendentes</span>
           <div class="NumbMonthInfo">
-            <h1 class="MainInfo">03</h1> <!-- ADICIONAR JS -->
+            <h1 class="MainInfo" id="AgendPend"></h1> <!-- ADICIONAR JS -->
             <span class="MainInfoMonth">Aguardando confirmação</span>
           </div>
         </div>
@@ -72,7 +73,7 @@
         <div>
           <span class="subInfo">Clientes cadastrados</span>
           <div class="NumbMonthInfo">
-            <h1 class="MainInfoTitle">128</h1>  <!-- ADICIONAR JS -->
+            <h1 class="MainInfoTitle" id="totalClients"></h1>  <!-- ADICIONAR JS -->
             <span class="MainInfoMonth">Total na base</span>
           </div>
         </div>
@@ -128,128 +129,8 @@
         <span class="tableTitle">STATUS</span>
         <span class="tableTitle">AÇÕES</span>
       </div>
-      <div class="dataUsers">
-        <div class="divEachData">
-         
-          
-            <h3 class="ClientName">Lucas Ferreira</h3>
-          
-            <span class="tableSubInfo">Fade preciso</span>
-            <span class="tableSubInfo">Rafael Nunes</span>
-            <span class="tableSubInfo">14/10/2026</span>   
-            <span class="tableSubInfo">08:00</span>  
-            
-            <span class="statusComfirmed">Confirmado</span>  
-            <button class="CancelSchedule">Cancelar</button> 
-             
-          
-        </div>
-
-        <div class="divEachData">
-         
-          
-            <h3 class="ClientName">Armando da Silva</h3>
-          
-            <span class="tableSubInfo">Clássico atual</span>
-            <span class="tableSubInfo">Caio Martins</span>
-            <span class="tableSubInfo">14/10/2026</span>   
-            <span class="tableSubInfo">09:00</span>  
-            
-            <span class="statusPendente">Pendente</span> 
-            <div style="display: flex; gap: 5px;">
-              <button class="ConfirmSchedule">Confirmar</button> 
-              <button class="CancelSchedule">Cancelar</button> 
-            </div> 
-             
-          
-        </div>
-
-         <div class="divEachData">
-         
-          
-            <h3 class="ClientName">Amanda Linda</h3>
-          
-            <span class="tableSubInfo">Fade preciso</span>
-            <span class="tableSubInfo">Rafael Nunes</span>
-            <span class="tableSubInfo">14/10/2026</span>   
-            <span class="tableSubInfo">08:00</span>  
-            
-            <span class="statusCanceled">Cancelado</span>  
-            <span class="statusComfirmed">...</span>  
-             
-             
-          
-        </div>
-
-        <div class="divEachData">
-         
-          
-            <h3 class="ClientName">Lucas Ferreira</h3>
-          
-            <span class="tableSubInfo">Fade preciso</span>
-            <span class="tableSubInfo">Rafael Nunes</span>
-            <span class="tableSubInfo">14/10/2026</span>   
-            <span class="tableSubInfo">08:00</span>  
-            
-            <span class="statusCanceled">Cancelado</span>  
-            <span class="statusComfirmed">...</span>  
-             
-             
-          
-        </div>
-
-        <div class="divEachData">
-         
-          
-            <h3 class="ClientName">Lucas Ferreira</h3>
-          
-            <span class="tableSubInfo">Fade preciso</span>
-            <span class="tableSubInfo">Rafael Nunes</span>
-            <span class="tableSubInfo">14/10/2026</span>   
-            <span class="tableSubInfo">08:00</span>  
-            
-            <span class="statusCanceled">Cancelado</span>  
-            <span class="statusComfirmed">...</span>  
-             
-             
-          
-        </div>
-
-        <div class="divEachData">
-         
-          
-            <h3 class="ClientName">Lucas Ferreira</h3>
-          
-            <span class="tableSubInfo">Fade preciso</span>
-            <span class="tableSubInfo">Rafael Nunes</span>
-            <span class="tableSubInfo">14/10/2026</span>   
-            <span class="tableSubInfo">08:00</span>  
-            
-            <span class="statusCanceled">Cancelado</span>  
-            <span class="statusComfirmed">...</span>  
-             
-             
-          
-        </div>
-
-        <div class="divEachData">
-         
-          
-            <h3 class="ClientName">Lucas Ferreira</h3>
-          
-            <span class="tableSubInfo">Fade preciso</span>
-            <span class="tableSubInfo">Rafael Nunes</span>
-            <span class="tableSubInfo">14/10/2026</span>   
-            <span class="tableSubInfo">08:00</span>  
-            
-            <span class="statusCanceled">Cancelado</span>  
-            <span class="statusComfirmed">...</span>  
-             
-             
-          
-        </div>
-        
-         
+      <div class="dataUsers" id="divEachDataTH">
+        <!-- RESPONSÁVEL POR MOSTRAR OS DADOS DE CADA AGENDA! -->
       </div>
 
       <!-- ADICIONAR JS!!!!!!!!! -->

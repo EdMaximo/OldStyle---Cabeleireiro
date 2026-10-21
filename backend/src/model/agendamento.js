@@ -1,12 +1,19 @@
 import { EntitySchema, JoinColumn } from "typeorm";
 
 //Essa tabela vai ser o centro vai relacionar clientes, cortes e cabelereiros
+
 const agendamento = new EntitySchema({
     tableName: "agendamento",
     name: "agendamento",
     columns:  {
         id_agendamento: {primary: true, generated: "increment", type: "int"},
         data_hora: {type: "datetime", nullable: false},
+        status: { // Eduardo - Coloquei o status para a administração
+            type: "enum",
+            enum: ["pendente", "aceito", "recusado"],
+            default: "pendente",
+            nullable: false
+        }
     },
     relations: { //Relacionamento entre as outras tabelas
         cliente: {

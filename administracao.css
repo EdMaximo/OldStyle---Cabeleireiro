@@ -273,9 +273,10 @@ nav {
   border: 1px solid #337bff;
   border-radius: 4px;
   background-color: #337bff;
-  width: 12vh;
-  height: 5vh;
+  width: 8vh;
+  height: 4vh;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .ConfirmSchedule:hover {
@@ -287,9 +288,10 @@ nav {
   border: 1px solid #D5D8DE;
   border-radius: 4px;
   background-color: #ffffff;
-  width: 12vh;
-  height: 5vh;
+  width: 8vh;
+  height: 4vh;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .CancelSchedule:hover {

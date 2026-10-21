@@ -17,8 +17,24 @@ route.get("/teste", (request, response) => {
 
 // post -> cadastrar
 // route.post("users", )
-
 // route.delete("/users", )
+
+// Pegando a quantidade de agendamentos pendentes 
+route.get("/totalAgend", async (req, res) => {
+  const { id_agendamento } = req.query; 
+
+  try {
+    const totalAgend = await agedamentosRepository.countBy({status: "pendente"});
+
+    // status code http -> 200 (OK)
+    return res.status(200).send(totalAgend);
+
+  } catch {
+    throw new Error("Not possible get users.");
+  }
+
+  
+});
 
 // Aonde vai salvar o agendamento
 route.post("/", async (request, response) => {

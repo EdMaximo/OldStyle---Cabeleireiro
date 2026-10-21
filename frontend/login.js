@@ -20,7 +20,6 @@ btnLogin.addEventListener("click", async (event) => {
     telefone: telefone,
   };
 
-  localStorage.setItem("name", dadosCliente.name)
 
   // Validação dos dados de entrada
 
@@ -52,7 +51,8 @@ btnLogin.addEventListener("click", async (event) => {
         console.log(resultado);
         localStorage.setItem("id", resultado.id_cliente)
         alert("Cadastro de Usuario feito com sucesso");
-        window.location.href = "index.html"
+        localStorage.setItem("name", dadosCliente.name);
+        window.location.href = "index.html";
       } else {
         console.error("Erro no cadastro:", resultado);
         alert("Erro ao realizar o cadastro");
