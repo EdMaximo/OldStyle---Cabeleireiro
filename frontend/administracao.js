@@ -8,7 +8,7 @@ const cancelButton = document.getElementById("cancelButton");
 const confirmButton = document.getElementById("confirmButton")
 
 const date = new Date();
-console.log(date.getDate()) // ISO
+// console.log(date.getDate()) // ISO
 
 
 document.addEventListener("DOMContentLoaded", async (event) => {
@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       
       if(agendamentos){
         agendamentos.forEach((agendamento) => {
+
           const cliente = agendamento.cliente.name;
           const corte = agendamento.corte.nome;
           const barbeiro = agendamento.cabelereiro.nome;
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
           // Separa hora e data
           const data = new Date(dataHora);
 
+          // Formatando...
           const dia = String(data.getDate()).padStart(2, "0");
           const mes = String(data.getMonth() + 1).padStart(2, "0");
           const ano = data.getFullYear();
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
           const dataFormatada = `${dia}/${mes}/${ano}`;
           const horaFormatada = `${String(data.getHours()).padStart(2, "0")}:${String(data.getMinutes()).padStart(2, "0")}`;
 
-          console.log(cliente)
+          // console.log(cliente)
           
           const DataDivs = document.createElement("div");
           // Adiciona a class "divEachData" para o DataDiv
@@ -60,20 +62,47 @@ document.addEventListener("DOMContentLoaded", async (event) => {
             <span class="statusPendente">${status}</span> 
 
             <div style="display: flex; gap: 5px;">
-              <button class="ConfirmSchedule" id="confirmButton">Confirmar</button> 
+              <button class="ConfirmSchedule" id="confirmButton" data-id="${agendamento.id_agendamento}">Confirmar</button> 
               <button class="CancelSchedule" id="cancelButton">Cancelar</button> 
             </div> 
           `
+          console.log(agendamento.id_agendamento);
+
+          // confirmButton.dataset.id = agendamento.id_agendamento;
 
           // TODO: ADICIONAR OS BOTÕES (usar if?)
-          
+          const confirmButton = DataDivs.querySelector(".ConfirmSchedule");
+
+          confirmButton.addEventListener("click", async (event) => {
+          const id_agendamento = event.currentTarget.dataset.id;
+
+          try {
+            const response = await fetch(
+            `http://localhost:3333/agendamento/AllAgend?id_agendamento=${id_agendamento}`,
+            {
+                method: "PATCH",
+            }
+          );
+
+          if (!response.ok) {
+            throw new Error("Erro ao confirmar agendamento");
+          }
+
+          alert("Agend confirmado!");
+          const statusElement = DataDivs.querySelector(".statusPendente");
+          statusElement.textContent = "aceito";
+          } catch (error) {
+          console.error(error);
+          alert("Não foi possível confirmar o agendamento.");
+          }
+          });
 
           divEachDataTH.appendChild(DataDivs)
 
-          console.log(agendamentos)
+          // console.log(agendamentos)
 
           
-          console.log(cliente,corte,barbeiro,dataHora, status)
+          // console.log(cliente,corte,barbeiro,dataHora, status)
         })
       }
     }catch(erro) {
@@ -101,7 +130,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   
       const resultado = await response.json();
       totalClients.innerText = resultado;
-      console.log(resultado)
+      // console.log(resultado)
      
     } catch (erro) {
       console.error("Erro de conexão com a API:", erro);
@@ -119,7 +148,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   
       const resultado = await response.json();
       AgendPend.innerText = resultado;
-      console.log(resultado)
+      // console.log(resultado)
      
     } catch (erro) {
       console.error("Erro de conexão com a API:", erro);
@@ -128,3 +157,41 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
   }
 )
+
+// confirmButton.addEventListener("click", async () => {
+//     const id = botaoConfirmar.dataset.id;
+
+//     // console.log(id);
+// });
+
+
+
+
+// confirmButton.addEventListener("click", async (event) => {
+//   event.preventDefault();
+
+//   try {
+//       const response = await fetch("http://localhost:3333/agendamento/allAgend", {
+//         method: "PATCH",
+//         headers: {
+//           "Content-Type": "application/json", //Informa q estamos mandando um arquivo json
+//         },
+//         body: JSON.stringify(dadosCliente), // Converte o arquivo javascript para json
+//       });
+  
+//       const resultado = await response.json();
+//       AgendPend.innerText = resultado;
+//       console.log(resultado)
+     
+//     } catch (erro) {
+//       console.error("Erro de conexão com a API:", erro);
+//       alert("Não foi possível conectar ao servidor.");
+//     }
+
+// })
+
+// cancelButton.addEventListener("click", async (event) => {
+//   event.preventDefault();
+
+
+// })
